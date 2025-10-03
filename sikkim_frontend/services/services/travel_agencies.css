@@ -1,0 +1,154 @@
+/* Global Reset + Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: #F0F7FF;
+  color: #434C5E;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Filter Section */
+.filter-container {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 2px solid #E0E7FF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #434C5E;
+}
+
+.filter-group select {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  background: #FFFFFF;
+  color: #1890FF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+}
+
+.filter-group select:hover,
+.filter-group select:focus {
+  border-color: #1890FF;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.1);
+}
+
+/* Grid */
+#agencies_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 cards per row */
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+
+/* Card */
+.travel_agencies {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 2px solid #55caf1;  /* subtle border */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.travel_agencies:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(56,135,253,0.2);
+  border: 2px solid #a0e4fa;
+}
+
+/* Image */
+.image_card {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  
+  padding: 15px;
+}
+
+.image_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.travel_agencies:hover .image_card img {
+  transform: scale(1.08);
+}
+
+/* Info */
+.agency_info {
+  padding: 1.2rem;
+  flex-grow: 1;
+}
+
+.agency_info h2 {
+  font-size: 1.4rem;
+  color: #0f52ba;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #FFD700;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Contact */
+.contact_details p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #434C5E;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.contact_details i {
+  margin-right: 8px;
+  color: #0f52ba;
+  transition: color 0.3s;
+}
+
+.contact_details p:hover i {
+  color: #FFD700;
+}

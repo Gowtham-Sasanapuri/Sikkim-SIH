@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Home Page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <title>Home Page</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="navbar">
+        <div id="VrNav">
+          <h4><img src="./icons/camera.png" alt="" />Virtual Tour</h4>
+        </div>
+        <div id="MapNav">
+          <h4><img src="./icons/location.png" alt="" />Explore map</h4>
+        </div>
+        <div id="Arch">
+          <h4><img src="./icons/folder.png" alt="" />Archive</h4>
+        </div>
+        <div id="EventsNav">
+          <h4><img src="./icons/calendar.png" alt="" />Events</h4>
+        </div>
+        <div id="AudioNav">
+          <h4><img src="./icons/headphones.png" alt="" />Audio</h4>
+        </div>
+        <div id="Services">
+          <h4><img src="./icons/customer-service.png" alt="" />Services</h4>
+        </div>
+      </div>
+      <div id="navbar_toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="cover_image">
+        <div class="cover_image_main">
+          <!-- <img src="./images/sikkim.jpg" alt="" /> -->
+          <video autoplay muted loop playsinline>
+            <source src="./videos/Sikkim_tourism.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="monastery">
+          <img src="./icons/monastery.png" alt="" />
+          <h5>Monastery 360⁰</h5>
+        </div>
+        <div class="cover_image_heading">
+          <div class="heading_div">
+            <h2>Discover the beauty of</h2>
+            <h1>Sikkim</h1>
+            <p>
+              Discover lasting peace in Sikkim’s mountain monasteries, where
+              Himalayan beauty meets centuries of spiritual tradition.
+            </p>
+          </div>
+        </div>
+        <div class="SignUP_Login">
+          <button><img src="./icons/man.png" alt="" />Login</button>
+        </div>
+        <div class="profile">
+          <button><img src="./icons/boy.png" alt="">Profile</button>
+        </div>
+      </div>
+      <div id="about_section">
+        <div class="about_heading">
+          <h1>About this Website</h1>
+        </div>
+        <div id="cards">
+          <div class="card top">
+            <div class="card-body">
+              <h1 class="card-title">25<sup>+</sup></h1>
+              <p class="card-text">Monasteries Digitized</p>
+            </div>
+          </div>
+          <div class="card bottom">
+            <div class="card-body">
+              <h1 class="card-title">500<sup>+</sup></h1>
+              <p class="card-text">Virtual Tours Created</p>
+            </div>
+          </div>
+          <div class="card top">
+            <div class="card-body">
+              <h1 class="card-title">1000<sup>+</sup></h1>
+              <p class="card-text">Manuscripts Archived</p>
+            </div>
+          </div>
+          <div class="card bottom">
+            <div class="card-body">
+              <h1 class="card-title">50<sup>+</sup></h1>
+              <p class="card-text">Cultural Events</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bootstrap -->
+
+      <div id="bootstrap_heading">
+        <h1>Discover Sikkim’s Culture & Heritage</h1>
+      </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/budda_image.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Heart of Buddhism</h5>
+              <p>
+                Sikkim’s monasteries and Buddha heritage symbolize peace,
+                meditation, and timeless wisdom.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/de46ef2791b04b35c986797281fb0693_20240208115001.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vibrant Festivals</h5>
+              <p>
+                From Losar to Pang Lhabsol, Sikkim’s festivals unite communities
+                with masked dances, prayers, and joy.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/IMAGE_1651510682.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Art & Craft Heritage</h5>
+              <p>
+                Thangkas, wood carvings, and handwoven carpets showcase devotion
+                and craftsmanship.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="./images/bannerlarg-a3b2d550ed98d17.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Flavors of Sikkim</h5>
+              <p>
+                From steaming momos to hearty thukpa, Sikkim’s cuisine blends
+                Tibetan and Nepali traditions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- bootstrap -->
+      <div id="experience_explanation">
+        <div class="experience_heading">
+          <h1>Witness Monastic Legacy</h1>
+        </div>
+        <div class="experience_paragraphs">
+          <h4>
+            Uncover the essence of Sikkim's monasteries, centers of meditation,
+            art, and
+          </h4>
+          <h4>cultural heritage passed down through generations....</h4>
+        </div>
+      </div>
+      <div id="sections">
+        <div class="section_divs left">
+          <div class="section_div_image">
+            <img src="./icons/virtual-tour.png" alt="" />
+          </div>
+          <div class="section_div_paragraphs">
+            <h1>Sikkim Panorama</h1>
+            <p>
+              Every monastery tells a story of faith and tradition, and every
+              chant carries the soul of Sikkim’s mountains and valleys.
+            </p>
+            <button id="Pano_btn">Spiritual Vista <span>→</span></button>
+          </div>
+        </div>
+        <div class="section_divs right">
+          <div class="section_div_image">
+            <img src="./icons/location-mark.png" alt="" />
+          </div>
+          <div class="section_div_paragraphs">
+            <h1>Dynamic Map</h1>
+            <p>
+              Explore Sikkim’s monasteries with scenic routes, nearby
+              attractions, and travel guides for a spiritual journey.
+            </p>
+            <button id="Map">Navigate Now <span>→</span></button>
+          </div>
+        </div>
+        <div class="section_divs left">
+          <div class="section_div_image">
+            <img src="./icons/will.png" alt="" />
+          </div>
+          <div class="section_div_paragraphs">
+            <h1>Digital Archive</h1>
+            <p>
+              Ancient manuscripts, murals, and historic documents preserved
+              digitally
+            </p>
+            <button id="Archieve">Explore Now <span>→</span></button>
+          </div>
+        </div>
+        <div class="section_divs right">
+          <div class="section_div_image">
+            <img src="./icons/schedule (1).png" alt="" />
+          </div>
+          <div class="section_div_paragraphs exception">
+            <h1>Events & Festivals</h1>
+            <p>
+              Cultural calendar with sacred rituals and festival participation
+              opportunities
+            </p>
+            <button id="Calendar">Festive Calendar<span>→</span></button>
+          </div>
+        </div>
+      </div>
+      <h1 id="map_header">Borders & Beauty: Sikkim</h1>
+      <div id="map">
+        <div id="map_content">
+          <h1>Discover Sikkim</h1>
+          <p>
+            Nestled in northeastern India, Sikkim is a land of breathtaking
+            landscapes, vibrant culture, and warm hospitality. Despite its small
+            size, it offers an incredible mix of nature, tradition, and
+            adventure.
+          </p>
+          <ul>
+            <li>
+              <strong>Himalayan beauty:</strong> Snow-capped peaks, serene
+              valleys, lush forests, and waterfalls, including the majestic
+              Kanchenjunga.
+            </li>
+            <li>
+              <strong>Buddhist heritage:</strong> Ancient monasteries and
+              colorful festivals reflect Sikkim’s rich spiritual traditions.
+            </li>
+            <li>
+              <strong>Delicious cuisine:</strong> Savor momos, thukpa, gundruk,
+              and other local delights.
+            </li>
+            <li>
+              <strong>Adventure & ecotourism:</strong> Trekking, river rafting,
+              paragliding, and pristine lakes await nature lovers.
+            </li>
+            <li>
+              <strong>Unique wildlife:</strong> Spot rare species like the red
+              panda and Himalayan monal.
+            </li>
+          </ul>
+          <p>
+            Explore this interactive map to discover Sikkim's districts, towns,
+            and natural wonders, and experience the charm of this Himalayan gem.
+          </p>
+        </div>
+
+        <div id="map_div"></div>
+      </div>
+      <footer>
+        <!-- Row 1: Logo + Columns -->
+        <div class="footer-container">
+          <div>
+            <div class="footer-logo">Monastery360<sup>0</sup></div>
+            <p>
+              Digitizing Sikkim's monasteries for tourism & cultural
+              preservation. Experience the sacred heritage through immersive
+              technology.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">Virtual Tours</a></li>
+              <li><a href="#">Monastery Map</a></li>
+              <li><a href="#">Digital Archives</a></li>
+              <li><a href="#">Events & Festivals</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Partners</h4>
+            <ul>
+              <li><a href="#">Government of Sikkim</a></li>
+              <li><a href="#">Dept. of Higher Education</a></li>
+              <li><a href="#">Tourism Department</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Row 2: Footer bottom -->
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+      <div id="chatbot">
+        <p>Your Personal Tour Guide, Wherever You Go, Whatever You Speak.</p>
+        <img src="./icons/pngtree-chatbot-with-speech-bubbles-color-icon-png-image_5282183.png" alt="">
+      </div>
+      <script src="./Home Page.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>

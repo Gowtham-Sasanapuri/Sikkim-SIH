@@ -1,0 +1,53 @@
+/* Similar to completed.css */
+body {
+    background-color: #d6e6f2;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+h2 {
+    color: #0f52ba;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 2px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.156);
+    border: 1px solid rgba(255, 255, 255, 0.73);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(129, 212, 250, 0.3) 0px 19px 38px, rgba(129, 212, 250, 0.25) 0px 15px 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(129, 212, 250, 0.873) 0px 19px 38px, rgba(129, 212, 250, 0.856) 0px 15px 12px;
+}
+
+.card h1 {
+    color: #0f52ba;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #6b8797;
+    margin: 5px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

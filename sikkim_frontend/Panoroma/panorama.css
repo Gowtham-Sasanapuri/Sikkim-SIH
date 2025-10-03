@@ -1,0 +1,10 @@
+*,*::after,*::before{
+    margin: 0;
+    width: 0;
+    box-sizing: border-box;
+}
+
+#panorama{
+    width: 100vw;
+    height: 100vh;
+}

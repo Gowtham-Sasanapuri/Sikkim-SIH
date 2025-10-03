@@ -1,0 +1,826 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #f0f7f7;
+  padding-bottom: 20px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  width: 100vw;
+  /* filter: brightness(60%); */
+  /* display: none; */
+}
+
+#navbar {
+  /* border: 0.5px solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 60%;
+  height: 7%;
+  border-radius: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  transition: all 0.5s ease-out;
+  animation: navbar 1.5s ease-out 1;
+}
+
+@keyframes navbar {
+  from {
+    top: -10%;
+    opacity: 0;
+  }
+  to {
+    top: 3%;
+    opacity: 1;
+  }
+}
+
+#navbar div {
+  width: 13%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#navbar div h4 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  color: #f0f7f7;
+  font-size: 1rem;
+  /* border: 1px solid black; */
+}
+
+#navbar div img {
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 55%;
+  z-index: 100;
+}
+
+#navbar div:hover {
+  background-color: #f0f7f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbar div:hover h4 {
+  color: #d4af37;
+}
+
+#navbar div:hover img {
+  height: 15%;
+  width: 15%;
+  display: block;
+  position: relative;
+  left: 0%;
+}
+
+#navbar_toggle {
+  /* background-color: black; */
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 101;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  transition: all 0.5s ease-out;
+}
+
+#navbar_toggle:hover {
+  cursor: pointer;
+}
+
+#navbar_toggle div {
+  width: 60%;
+  height: 2px;
+  background-color: white;
+  /* margin: 6px 0; */
+  border-radius: 25px;
+  position: relative;
+}
+/* cover_image css */
+
+
+.cover_image {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  margin-top: 0%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cover_image .monastery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  top: 4%;
+  margin-left: 4%;
+  /* border: 1px solid white; */
+  width: 11%;
+  height: 8%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  border-radius: 25px;
+  cursor: pointer;
+  animation: monastery 1.5s ease-out 1;
+}
+
+@keyframes monastery {
+  from {
+    top: 10%;
+    opacity: 0;
+  }
+
+  to {
+    top: 4%;
+    opacity: 1;
+  }
+}
+
+.cover_image .monastery::before {
+  content: " ";
+  background-color: #f0f7f7;
+  position: absolute;
+  height: 00%;
+  width: 00%;
+  overflow-x: hidden;
+  /* transform: translateX(-50%); */
+  border-radius: 25px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.cover_image .monastery:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.cover_image .monastery:hover h5 {
+  color: #d4af37;
+}
+
+.cover_image .monastery img {
+  width: 15%;
+  height: 42%;
+}
+
+.cover_image .monastery h5 {
+  color: white;
+  font-size: 1rem;
+  /* border: 1px solid red; */
+  /* margin-top: 6%; */
+}
+
+.cover_image .SignUP_Login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  /* border: 1px solid white; */
+  width: 8%;
+  height: 8%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  border-radius: 25px;
+  animation: monastery 1.5s ease-out 1;
+}
+
+.cover_image .SignUP_Login button {
+  width: 80%;
+  height: 60%;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-right: 12%;
+}
+
+.cover_image .SignUP_Login button img {
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 55%;
+  z-index: 100;
+}
+
+.cover_image .SignUP_Login button:hover {
+  outline: none;
+  /* border: 1px solid #d4af37; */
+  padding-right: 0%;
+  color: #d4af37;
+  background-color: #f0f7f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cover_image .SignUP_Login button:hover img {
+  height: 16px;
+  width: 16px;
+  display: block;
+  position: relative;
+  left: 0%;
+}
+
+.cover_image .profile {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  /* border: 1px solid white; */
+  width: 8%;
+  height: 8%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  border-radius: 25px;
+  animation: monastery 1.5s ease-out 1;
+}
+
+.cover_image .profile button {
+  width: 80%;
+  height: 60%;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-right: 12%;
+}
+
+.cover_image .profile button img {
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 55%;
+  z-index: 100;
+}
+
+.cover_image .profile button:hover {
+  outline: none;
+  /* border: 1px solid #d4af37; */
+  padding-right: 0%;
+  color: #d4af37;
+  background-color: #f0f7f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cover_image .profile button:hover img {
+  height: 16px;
+  width: 16px;
+  display: block;
+  position: relative;
+  left: 0%;
+}
+
+.cover_image .cover_image_main img {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("../images/cover_image.jpg"); */
+  background-size: cover;
+  background-position: center;
+  margin-top: 0%;
+  object-fit: cover;
+  filter: brightness(40%);
+  position: absolute;
+  z-index: -10;
+}
+
+.cover_image_heading .heading_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 80%;
+
+  /* border: 1px solid white; */
+}
+
+.cover_image_heading .heading_div h2 {
+  font-size: 1.8rem;
+    animation: Sikkim_steps 0.8s linear 1;
+  /* border: 1px solid white; */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.cover_image_heading .heading_div p {
+  font-size: 1.5rem;
+    animation: Sikkim_steps 0.8s linear 1;
+  /* border: 1px solid white; */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.cover_image .cover_image_heading .heading_div h1 {
+  color: #fdc939;
+  animation: Sikkim_steps 0.8s linear 1;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 6rem;
+  display: inline-block;
+  /* border: 1px solid wheat; */
+  width: fit-content;
+}
+
+@keyframes Sikkim_steps {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.cover_image .cover_image_heading .heading_div p {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* cover_image css */
+
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.header h1{
+  font-size: 4rem;
+  color: #0f52ba;
+  animation: appear 0.8s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+
+@keyframes appear {
+  from{
+    transform: translateY(30px);
+    opacity: 0;
+  }to{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  /* border: 1px solid green; */
+  padding: 1%;
+  }
+
+.cards .card{
+  height: 60vh;
+  /* border: 1px solid red; */
+  width: 40%;
+  margin-top: 2%;
+  border-radius: 25px;
+  background-color: #f0f7f7;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #9cb3d5;
+}
+
+.cards .card:nth-child(odd){
+  animation: left 0.5s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes left {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.cards .card:nth-child(even){
+  animation: right 0.5s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes right {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.cards .card:hover{
+    box-shadow: 0 8px 16px 0 rgba(129, 212, 250, 0.673),
+      0 6px 20px 0 rgba(129, 212, 250, 0.656);
+      transform: scale(1.05);
+}
+
+.cards .card .card_img{
+  /* border: 1px solid blue; */
+  height: 53%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.cards .card .card_img img{
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  object-fit: cover;
+}
+
+.cards .card .card_content{
+  /* border: 1px solid blue; */
+  padding: 3%;
+  height: 47%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
+}
+
+.cards .card .card_content h1{
+  color: #0f52ba;
+}
+
+.cards .card .card_content p{
+  color: #6b8797;
+}
+
+.cards .card .card_content button{
+  color: #f0f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.3rem;
+  background-color: #0f52ba;
+  border: none;
+  height: 7vh;
+  border-radius: 16px;
+  transition: all 0.3s linear;
+}
+
+.cards .card .card_content button:hover{
+  background-color: #3887fd;
+  box-shadow: 0 0.5px 8px 0 rgba(0, 0, 0, 0.3), 0 1px 20px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transform: translateX(-50%) scaleX(1.12);
+}
+
+.virtual_tour_card{
+  display: none;
+  /* flex-direction: column; */
+  /* justify-content: space-evenly; */
+  position: fixed;
+  height: 70vh;
+  width: 80vw;
+  border: 2px solid #05214b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(129, 212, 250, 0.673),
+    0 6px 20px 0 rgba(129, 212, 250, 0.656);
+}
+
+.virtual_tour_card .VT_header{
+  height: 15%;
+  background-color: #4f9fdd;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+}
+
+.virtual_tour_card .VT_header h1{
+  color: #f0f7ff;
+}
+
+.virtual_tour_card .VT_header button{
+  background-color: #f0f7ff;
+  width: 5vh;
+  color: #1052b4;
+  height: 5vh;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.virtual_tour_card .VT_header button:hover {
+  background-color: #043784;
+  color: #f0f7ff; /* Slightly darker shade for contrast */
+  transform: scale(1.05); /* Subtle scale-up effect */
+  cursor: pointer; /* Indicates the button is clickable */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.virtual_tour_card .pano_content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85%;
+}
+
+.virtual_tour_card .pano_content .iframe{
+  width: 60%;
+  /* border: 1px solid green; */
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.virtual_tour_card .pano_content .iframe iframe{
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.virtual_tour_card .pano_content .monastery_description_in_pano_container{
+  width: 40%;
+  /* border: 1px solid red; */
+  height: 100%;
+  padding: 1%;
+  background-color: #eaf3ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.virtual_tour_card .pano_content .monastery_description_in_pano_container h1{
+  color: #0f52ba;
+}
+
+.virtual_tour_card .pano_content .monastery_description_in_pano_container p{
+  color: #4f9fdd;
+  font-size: 1.5rem;
+}
+
+.virtual_tour_card .pano_content .monastery_description_in_pano_container p span{
+  font-size: 1.8rem;
+  color: #1052b4;
+  font-weight:bolder;
+}
+
+.virtual_tour_card .pano_content .monastery_description_in_pano_container .pano_btn{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.virtual_tour_card .pano_content .monastery_description_in_pano_container .pano_btn button{
+   background-color: #0f52ba;
+   color: #f0f7f7;
+   font-size: 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   border: none;
+   width: 40%;  
+   height: 150%;
+   cursor: pointer;
+   transition: all 0.8s ease-in-out;
+}
+
+
+.virtual_tour_card .pano_content .monastery_description_in_pano_container .pano_btn button:hover{
+  outline: none;
+  /* border: 1px solid #d4af37; */
+  color: #f0f7f7;
+  transform: scale(1.1);
+  background-color: #3887fd;
+  box-shadow: 0 0.5px 8px 0 rgba(0, 0, 0, 0.3), 0 1px 20px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  
+}
+ 
+
+@media (min-width: 320px) and (max-width: 440px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 60%;
+    top: 15%;
+    background: rgba(255, 255, 255, 0.156);
+    backdrop-filter: blur(20px);
+    /* -webkit-backdrop-filter: blur(20px); */
+    border: 1px solid rgba(255, 255, 255, 0.73);
+    margin-left: 100%;
+    transition: all 0.5s ease-out;
+  }
+
+  #navbar_toggle {
+    right: 5%;
+    display: flex;
+    top: 5%;
+  }
+
+  #navbar div {
+    display: flex;
+    width: 40%;
+    height: 10%;
+    background-image: linear-gradient(
+      155deg,
+      #f0f7ff,
+      transparent,
+      transparent,
+      #f0f7ff
+    );
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar div:hover {
+  background-color: #f0f7f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #navbar div h4 {
+    font-size: 0.8rem;
+    /* color: black; */
+  }
+
+  .cover_image_heading {
+    /* border: 1px solid white; */
+    width: 100%;
+  }
+
+  .cover_image_heading .heading_div {
+    width: 100%;
+    /* border: 1px solid white; */
+  }
+
+  .cover_image .cover_image_heading .heading_div h1 {
+    font-size: 3rem;
+    width: 100%;
+    animation: Sikkim_steps 3s linear 1s infinite;
+    /* border: 1px solid wheat; */
+  }
+
+  @keyframes Sikkim_steps {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 50%;
+    }
+  }
+
+  .cover_image_heading .heading_div h2 {
+    font-size: 1.5rem;
+  }
+
+  .cover_image .cover_image_heading .heading_div p {
+    font-size: 0.98rem;
+  }
+
+  .cover_image .monastery {
+    width: 50%;
+    position: relative;
+    margin-left: 0%;
+    top: 5%;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+    animation: monastery 1.5s ease-out;
+  }
+
+  @keyframes monastery {
+    from {
+      top: 10%;
+      opacity: 0;
+    }
+    to {
+      top: 5%;
+      opacity: 1;
+    }
+  }
+
+  .header h1{
+    font-size: 2rem;
+  }
+
+  .cards {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .cards .card{
+    width: 90%;
+    /* border: 1px solid red; */
+  }
+
+  .cards .card:hover{
+    transform: scale(1);
+  }
+
+  .cards .card .card_content h1{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,126 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  scrollbar-width: none;
+}
+
+/* Body */
+body {
+  background-color: #F0F7FF;
+  color: #434C5E;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.helpline_numbers_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+
+.helpline_numbers {
+  background: #ffffff;
+  border: 2px solid  #71d5f7;;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.helpline_numbers:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(56,135,253,0.2);
+  border: 2px solid #b5ecff;
+}
+
+/* Image */
+.helpline_image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px auto;
+  border: 3px solid #0f52ba;
+}
+
+.helpline_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.helpline_numbers:hover .helpline_image img {
+  transform: scale(1.08);
+}
+
+/* Details */
+.helpline_details h2 {
+  font-size: 1.3rem;
+  color: #0f52ba;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.helpline_details h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6b8797;
+  margin-bottom: 0.75rem;
+}
+
+.helpline_details p {
+  font-size: 0.95rem;
+  color: #434C5E;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Contact Number */
+#contact_number {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #0c2ec4;
+  margin-top: 0.75rem;
+  display: inline-block;
+}
+
+#contact_number i {
+  margin-right: 6px;
+  color: #0f52ba;
+}
+
+/* Icons */
+.fa-solid {
+  color: #0f52ba;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .helpline_numbers_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .helpline_numbers_container {
+    grid-template-columns: 1fr;
+  }
+}

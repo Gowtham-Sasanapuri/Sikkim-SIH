@@ -1,0 +1,280 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e5f0ff;
+  color: #030303;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-image: linear-gradient(135deg, #709ad3, #1f4f91,#0a2f64,#094f74c3);
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Overview section */
+#overview {
+  margin: 20px 70px;
+  max-width: 90%;
+}
+
+#overview img {
+  width: 90%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#overview p {
+  margin: 15px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Collections container */
+#collectionsContainer {
+  margin: 30px 40px;
+}
+
+/* Section titles */
+#collectionsContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #114c88c1;
+}
+
+/* Grid of items in each collection */
+#collectionsContainer div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+/* Individual card */
+#collectionsContainer .card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 8px 0 rgba(129, 212, 250, 0.5),
+    0 5px 20px 0 rgba(129, 212, 250, 0.767);
+  display: flex;
+  flex-direction: column;
+}
+
+#collectionsContainer .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+#collectionsContainer .card img:hover {
+  transform: scale(1.05);
+}
+
+#collectionsContainer .card h3 {
+  margin-top: 8px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+#collectionsContainer .card p {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: #444;
+}
+
+/* Card action buttons */
+#collectionsContainer .card .btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+#collectionsContainer .card .btn.view {
+  background: #2d6fb3;
+  color: #fff;
+}
+
+#collectionsContainer .card .btn.download {
+  background: #69baea;
+  color: #fff;
+}
+
+#collectionsContainer .card .btn:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+/* Audio control buttons inside card */
+#collectionsContainer .card .audio-controls {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  align-items: center;
+}
+
+#collectionsContainer .card .audio-controls .btn {
+  background: #1a5f79; /* deep red for audio */
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+#collectionsContainer .card .audio-controls .btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+#collectionsContainer .card .audio-controls .status {
+  font-size: 0.85rem;
+  color: #333;
+  margin-left: 8px;
+}
+
+/* Global buttons (Download All / Back) */
+button#backBtn,
+button#downloadAll {
+  background: #17799f;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  margin: 10px 5px;
+  transition: all 0.3s ease;
+}
+
+button#backBtn:hover,
+button#downloadAll:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Section layout */
+#collectionsContainer section {
+  margin-bottom: 25px;
+}
+
+/* Lightbox / Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal-content img {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.modal-content h3 {
+  margin-top: 10px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.modal-content button.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 15px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  #overview {
+    margin: 15px;
+  }
+  #overview img {
+    width: 100%;
+  }
+  #collectionsContainer {
+    margin: 15px;
+  }
+  #collectionsContainer div {
+    grid-template-columns: 1fr;
+  }
+  #collectionsContainer .card img {
+    height: 140px;
+  }
+}
+
+/* Header language dropdown */
+#languageDropdown {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #e3e3e3;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#languageDropdown:hover {
+  background: #1373b290;
+  color: #fff;
+  transform: scale(1.05);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Content</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/profile_content.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="profile-card">
+    <h2 class="title"><i class="fa-solid fa-user-circle"></i> Your Profile</h2>
+    
+    <div class="profile-header">
+      <div class="profile-pic">
+        <img src="boy.jpg" alt="Profile Picture">
+        <button id="edit_profile_img">Edit profile Picture</button>
+        <input type="file" id="file_input" accept="image/*" style="display: none;">
+      </div>
+    </div>
+
+    <div class="profile-grid">
+      <div class="profile-item">
+        <div class="label"><i class="fa-solid fa-user"></i> Username:</div>
+        <span id="username"></span>
+      </div>
+      <div class="profile-item">
+        <div class="label"><i class="fa-solid fa-venus-mars"></i> Gender:</div>
+        <span id="gender"></span>
+      </div>
+      <div class="profile-item">
+        <div class="label"><i class="fa-solid fa-id-card"></i> Full Name:</div>
+        <span id="fullname"></span>
+      </div>
+      <div class="profile-item">
+        <div class="label"><i class="fa-solid fa-language"></i> Languages:</div>
+        <span id="languages"></span>
+      </div>
+      <div class="profile-item">
+        <div class="label"><i class="fa-solid fa-location-dot"></i> Location:</div>
+        <span id="location"></span>
+      </div>
+      <div class="profile-item">
+        <div class="label"><i class="fa-solid fa-phone"></i> Phone:</div>
+        <span id="phone"></span>
+      </div>
+    </div>
+
+    <button id="edit-btn"><i class="fa-solid fa-pen-to-square"></i> Edit Profile</button>
+    <button id="save-btn"><i class="fa-solid fa-pen-to-square"></i> Save Profile</button>
+  </div>
+
+  <script src="js/profile_content.js"></script>
+</body>
+</html>

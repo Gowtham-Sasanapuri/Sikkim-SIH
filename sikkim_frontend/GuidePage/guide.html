@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guide Page</title>
+  <link rel="stylesheet" href="./guide.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Welcome Guide,</h1>
+      <div id="header-icons">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </div>
+
+    <div id="body">
+      <!-- 🔹 Navbar with icons -->
+      <div id="navbar">
+        <div id="Itinerary" class="active">
+          <i class="fa-solid fa-calendar-plus"></i>
+          <h4>Itinerary Creation</h4>
+        </div>
+        <div id="Itinerary_created">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h4>Itinerary Created</h4>
+        </div>
+        <div id="Request">
+          <i class="fa-solid fa-user-group"></i>
+          <h4>Request</h4>
+        </div>
+        <div id="past_tourist">
+          <i class="fa-solid fa-users"></i>
+          <h4>Past Tourists</h4>
+        </div>
+        <div id="profile">
+          <i class="fa-solid fa-user"></i>
+          <h4>Profile</h4>
+        </div>
+        <div id="logout_btn">
+          <button>Log Out</button>
+        </div>
+      </div>
+
+      <!-- 🔹 Content sections -->
+      <div id="body_contents">
+        <div id="Itinerary_contents" class="active">
+          <table>
+            <thead>
+              <tr>
+                <th><i class="fa-solid fa-user"></i> Username</th>
+                <th><i class="fa-solid fa-phone"></i> Mobile Number</th>
+                <th><i class="fa-solid fa-calendar-days"></i> From</th>
+                <th><i class="fa-solid fa-calendar-days"></i> To</th>
+                <th><i class="fa-solid fa-map"></i> Create Itinerary</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div id="Itinerary_created_contents">
+          <table>
+            <thead>
+              <tr>
+                <th><i class="fa-solid fa-user"></i> Username</th>
+                <th><i class="fa-solid fa-phone"></i> Mobile Number</th>
+                <th><i class="fa-solid fa-list-check"></i> Created Itinerary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gowtham</td>
+                <td>9491157536</td>
+                <td><button>View Itinerary</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="Request_contents">
+        </div>
+
+        <div id="past_tourist_contents">
+          <table>
+            <thead>
+              <tr>
+                <th><i class="fa-solid fa-user"></i> Username</th>
+                <th><i class="fa-solid fa-phone"></i> Mobile Number</th>
+                <th><i class="fa-solid fa-location-dot"></i>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gowtham</td>
+                <td>9441408136</td>
+                <td>Kerala</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="profile_contents">
+          <h1>Your Profile</h1>
+          <div id="details">
+            <div id="guide_img">
+              <img src="" alt="profile picture" />
+              <div id="profile_img">
+                <button id="edit_img">Edit Profile Image</button>
+                <input type="file" id="file_input" accept="image/*" style="display: none;">
+              </div>
+            </div>
+
+            <div id="guide_details">
+              <label>
+                <h3><i class="fa-solid fa-user"></i> Username</h3>
+                <span class="value" id="username_value"></span>
+              </label>
+              <label>
+                <h3><i class="fa-solid fa-id-card"></i> Full Name</h3>
+                <span class="value" id="fullname_value"></span>
+              </label>
+              <label>
+                <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                <span class="value" id="experience_value"></span>
+              </label>
+              <label>
+                <h3><i class="fa-solid fa-phone"></i> Phone Number</h3>
+                <span class="value" id="phone_value"></span>
+              </label>
+              <label>
+                <h3><i class="fa-solid fa-venus-mars"></i> Gender</h3>
+                <span class="value" id="gender_value"></span>
+              </label>
+              <label>
+                <h3><i class="fa-solid fa-language"></i> Languages Known</h3>
+                <span class="value" id="languages_value"></span>
+              </label>
+            </div>
+
+
+            <div id="edit_btn">
+              <button>Edit</button>
+            </div>
+            <div id="save_btn">
+              <button>Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./guide.js" type="module"></script>
+</body>
+
+</html>

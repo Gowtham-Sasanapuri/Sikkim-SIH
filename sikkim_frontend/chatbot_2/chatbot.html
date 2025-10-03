@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./chat.css">
+</head>
+
+<body>
+    <img src="./images/download.jpeg" alt="" id="cover">
+    <div id="headers">
+        <div class="monastery">
+            <img src="./icons/monastery.png" alt="" />
+            <h5>Monastery 360⁰</h5>
+        </div>
+        <select class="Language" id="lang">
+            <option value="en-IN">English</option>
+            <option value="hi-IN">Hindi</option>
+            <option value="bo-IN">Sikkimese</option>
+            <option value="ne-NP">Nepali</option>
+            <option value="lep">Lepcha</option>
+        </select>
+    </div>
+
+    <div class="chat">
+    </div>
+    <div class="chatbox">
+        <input id="user_input" type="text" placeholder="Ask something about Sikkim" autocomplete="off">
+        <button id="mic"><i class="fa-solid fa-microphone"></i></button>
+        <button id="send_input" class="send_btn"><img src="./icons/paper-plane.png" alt=""></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="./chatbot.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link rel="stylesheet" href="./Registration.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="cover_image">
+      <img src="./images/sikkim.jpg" alt="">
+    </div>
+    <div id="Header">
+      <h1>Welcome to Sikkim Tourism Portal</h1>
+      <p>Create an account as a Tourist or a Guide to explore and manage trips seamlessly.</p>
+    </div>
+    <div id="Selector">
+      <div class="Registration_and_Login_toggler">
+        <button id="Register_btn" class="ative">Register</button>
+        <button id="Login_btn" class="active">LogIn</button>
+      </div>
+      <div id="role_select">
+        <p>
+          I am a :
+          <span><select id="role">
+              <option value="Guide">Tourist Guide</option>
+              <option value="User">Tourist</option>
+            </select></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="Forms">
+      <div id="Registration_form" class="ative">
+        <div id="guide_form" class="ative">
+          <form id="guideRegisterForm">
+            <label for="username">
+              Username:
+              <input type="text" name="username" id="guide_username" placeholder="Enter a unique username" required />
+            </label>
+
+            <label for="email">
+              Email:
+              <input type="email" name="email" id="g_mail" placeholder="example@domain.com" required />
+            </label>
+
+            <label for="password">
+              Password:
+              <input type="password" name="password" id="g_pass" placeholder="Create a strong password" required />
+            </label>
+
+            <label for="full_name">
+              Full Name:
+              <input type="text" name="full_name" id="g_fullname" placeholder="Enter your full name" required />
+            </label>
+
+            <label for="experience">
+              Experience (years):
+              <input type="number" name="experience" id="g_exp" min="0" placeholder="e.g., 5" required />
+            </label>
+
+            <label for="language">
+              Languages:
+              <input type="text" name="language" id="g_lang" placeholder="e.g., English, Hindi, French" required />
+            </label>
+
+            <label for="mobile">
+              Mobile Number:
+              <input type="tel" name="mobile" id="g_mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}"
+                required />
+            </label>
+
+            <label for="Gender">
+              Gender:
+              <div id="Gender_div">
+                <label for="male" style="cursor: pointer;"><input type="radio" name="gender" id="male" value="Male"
+                    style="cursor: pointer;">Male</label>
+                <label for="Female" style="cursor: pointer;"><input type="radio" name="gender" id="Female"
+                    value="Female" style="cursor: pointer;">Female</label>
+              </div>
+
+            </label>
+
+            <div class="submit_btn">
+              <button id="tour_guide_submit" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+        <div id="user_form" class="active">
+          <form id="touristRegisterForm">
+            <label for="username">Username:
+              <input type="text" id="r_username" name="username" required
+                placeholder="Choose a unique username" /></label>
+            <label for="password">Password:
+              <input type="password" id="r_password" name="password" required
+                placeholder="Create a strong password" /></label>
+            <label for="gmail_id">Gmail ID:
+              <input type="email" id="r_mail" name="gmail_id" required placeholder="example@gmail.com" /></label>
+            <label for="user_mobile">
+              Mobile Number:
+              <input type="tel" name="user_mobile" id="u_mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}"
+                required />
+            </label>
+            <label for="location">
+              Location :
+              <input type="text" id="location" placeholder="eg:Kerala,Rajasthan.." required>
+            </label>
+            <label for="full_name">
+              Full Name:
+              <input type="text" name="full_name" id="u_fullname" placeholder="Enter your full name" required />
+            </label>
+            <label for="language">
+              Languages:
+              <input type="text" name="language" id="u_lang" placeholder="e.g., English, Hindi, French" required />
+            </label>
+            <label for="Gender">
+              Gender:
+              <div id="user_Gender_div">
+                <label for="u_male" style="cursor: pointer;"><input type="radio" name="u_gender" id="u_male" value="Male"
+                    style="cursor: pointer;">Male</label>
+                <label for="u_Female" style="cursor: pointer;"><input type="radio" name="u_gender" id="u_Female"
+                    value="Female" style="cursor: pointer;">Female</label>
+              </div>
+            </label>
+            <div class="submit_btn">
+              <button id="user_submit_btn" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="login_form" class="active">
+        <form id="loginForm">
+          <label for="username">Username:
+            <input type="text" name="username" id="l_username" required placeholder="Enter your username" /></label>
+          <label for="password">Password:
+            <input type="password" name="password" id="l_password" required placeholder="Enter your password" /></label>
+          <div class="submit_btn">
+            <button id="user_login_btn" type="submit">Login</button>
+          </div>
+          <div class="forgot_password">
+            <a href="/forgot-password">Forgot Password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./registration.js"></script>
+</body>
+
+</html>

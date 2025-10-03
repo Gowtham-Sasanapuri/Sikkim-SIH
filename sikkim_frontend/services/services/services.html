@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sikkim Services</title>
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="logged_in">
+    <div id="navbar">
+      <div id="VrNav">
+        <h4><img src="./icons/camera.png" alt="" />Virtual Tour</h4>
+      </div>
+      <div id="MapNav">
+        <h4><img src="./icons/location.png" alt="" />Explore map</h4>
+      </div>
+      <div id="Arch">
+        <h4><img src="./icons/folder.png" alt="" />Archive</h4>
+      </div>
+      <div id="EventsNav">
+        <h4><img src="./icons/calendar.png" alt="" />Events</h4>
+      </div>
+      <div id="AudioNav">
+        <h4><img src="./icons/headphones.png" alt="" />Audio</h4>
+      </div>
+      <div id="Services">
+        <h4><img src="./icons/customer-service.png" alt="" />Services</h4>
+      </div>
+    </div>
+
+    <div class="cover_image">
+      
+      <div class="monastery">
+        <img src="./icons/monastery.png" alt="" />
+        <h5>Monastery 360⁰</h5>
+      </div>
+      <div class="cover_image_heading">
+        <div class="heading_div">
+          <h1>Services in Sikkim</i></h1>
+          <h2>Your one-stop guide for travel, stay, health & more</h2>
+        </div>
+      </div>
+      <div class="SignUP_Login">
+        <button><img src="./icons/man.png" alt="" />Login</button>
+      </div>
+      <div class="profile">
+        <button><img src="./icons/boy.png" alt="">Profile</button>
+      </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li><a href="travel_agencies.html" target="contentFrame" class="active">
+              <i class="fa-solid fa-car"></i> Travel Agencies</a></li>
+
+          <li><a href="hotels.html" target="contentFrame">
+              <i class="fa-solid fa-hotel"></i> Hotels</a></li>
+
+          <li><a href="/sikkim_frontend/all guides page/all_guide.html" target="contentFrame">
+              <i class="fa-solid fa-people-group"></i> Guides</a></li>
+
+          <li><a href="hospitals.html" target="contentFrame">
+              <i class="fa-solid fa-hospital"></i> Hospitals</a></li>
+
+          <li><a href="helpline.html" target="contentFrame">
+              <i class="fa-solid fa-phone"></i> Helpline</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content Area -->
+      <main class="content">
+        <iframe name="contentFrame" src="travel_agencies.html" frameborder="0"></iframe>
+      </main>
+    </div>
+  </div>
+
+  <div id="not_logged_in">
+    <p>LogIn to Use the Services</p>
+    <button id="login_btn">LogIn Here</button>
+  </div>
+
+
+
+  <script src="services_navbar.js"></script>
+</body>
+
+</html>

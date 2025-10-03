@@ -1,0 +1,118 @@
+[
+  {
+    "name": "Rumtek Monastery",
+    "image": "./images/rumtek_monastery_826.jpg",
+    "description": "The largest monastery in Sikkim, home to rare Buddhist manuscripts, relics, and sacred texts.",
+    "location": "Gangtok, East Sikkim",
+    "period": "16th Century (rebuilt in 1960s)",
+    "pages": 120,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Kagyu sect's spiritual, cultural hub.",
+    "school": "Kagyu",
+    "sources" : ["https://www.google.com/maps/embed?pb=!4v1758297337988!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzRfdGI5Qnc.!2m2!1d27.28854528167496!2d88.56161848386864!3f356.86172!4f10.466239999999999!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758297419010!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQzRfcmJjb0FF!2m2!1d27.28851332230166!2d88.56200941137851!3f354.48404!4f17.448400000000007!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758297487431!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2t2ZXZVaXdF!2m2!1d27.28884361783851!2d88.56089980788117!3f56.05144999999999!4f11.028940000000006!5f0.7820865974627469" ,
+    "https://www.google.com/maps/embed?pb=!4v1758297528493!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0VnclRuUEE.!2m2!1d27.28859697392724!2d88.56191179043539!3f220!4f0!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758297599561!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2tzTVh5b0FF!2m2!1d27.2886859898702!2d88.56146202338051!3f57.41087999999999!4f30!5f0.7820865974627469" ,
+    "https://www.google.com/maps/embed?pb=!4v1758297667136!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDQzdTc2dUFF!2m2!1d27.28868608105076!2d88.5614621708459!3f349.65274!4f8.665595999999994!5f0.7820865974627469"
+    ] 
+  },
+  {
+    "name": "Pemayangtse Monastery",
+    "image": "./images/Pemayangtse_Monastery.jpg",
+    "description": "One of the oldest monasteries in Sikkim, famous for its elaborate murals and wooden sculptures.",
+    "location": "Pelling, West Sikkim",
+    "period": "18th Century",
+    "pages": 85,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Oldest Nyingma, controls Sikkim monasteries.",
+    "school": "Nyingma",
+    "sources" : ["https://www.google.com/maps/embed?pb=!4v1758297865923!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREUzSlhyOXdF!2m2!1d27.30291171978085!2d88.24216202374956!3f80!4f10!5f0.7820865974627469" ,
+    "https://www.google.com/maps/embed?pb=!4v1758297899043!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREVoSlhucEFF!2m2!1d27.30518919282202!2d88.25156580066201!3f172.0075!4f29.68105!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758297929222!6m8!1m7!1sYUkJaazuh5oUI-j_5xf66g!2m2!1d27.30501017658156!2d88.2512003411821!3f58.864630000000005!4f0!5f0.7820865974627469"
+     ]
+  },
+  {
+    "name": "Tashiding Monastery",
+    "image": "./images/Tashiding_Monastery.webp",
+    "description": "Renowned for its spiritual significance and ancient handwritten scriptures preserved by monks.",
+    "location": "West Sikkim",
+    "period": "17th Century",
+    "pages": 200,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Holiest, hosts sacred Bhumchu festival.",
+    "school": "Nyingma",
+    "sources" : ["https://www.google.com/maps/embed?pb=!4v1758298266686!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0V6djI5YUE.!2m2!1d27.31176641449287!2d88.29763642641436!3f315.3204333471648!4f-50.41470527329872!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758298330801!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0V6c08zSWc.!2m2!1d27.30891943909927!2d88.29787983128344!3f280!4f10!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758298391056!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V6djM1LUFF!2m2!1d27.307710898809!2d88.2976437708665!3f20!4f0!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758298450665!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0V6c08zSWc.!2m2!1d27.30891943909927!2d88.29787983128344!3f318.3023401009211!4f7.843816733274593!5f0.7820865974627469"]
+  },
+  {
+    "name": "Phodong Monastery",
+    "image": "./images/Phodong_Monastery_b.jpg",
+    "description": "Built by the Chogyal, this monastery contains old murals and preserved scriptures.",
+    "location": "North Sikkim",
+    "period": "18th Century",
+    "pages": 60,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Kagyu, ancient murals, pilgrimage site.",
+    "school": "Kagyu",
+    "sources":["https://www.google.com/maps/embed?pb=!4v1758298581294!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREUtSTJBbXdF!2m2!1d27.41250043052966!2d88.58361050014649!3f61.73128027148041!4f-7.434342810221352!5f0.7820865974627469" ,
+    "https://www.google.com/maps/embed?pb=!4v1758298618922!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRGg0OURqV3c.!2m2!1d27.41303405816734!2d88.58375766744783!3f109.05394493352685!4f4.752224592731281!5f0.7820865974627469"]
+  },
+  {
+    "name": "Enchey Monastery",
+    "image": "./images/Enchey_Monastery.jpg",
+    "description": "A 200-year-old monastery associated with tantric rituals, containing murals and historical records.",
+    "location": "Gangtok, East Sikkim",
+    "period": "19th Century",
+    "pages": 95,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Nyingma, protective deities, Chaam festival.",
+    "school": "Nyingma",
+    "sources":["https://www.google.com/maps/embed?pb=!4v1758299253612!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0pzTXEzOWdF!2m2!1d27.33593677395685!2d88.61916587167339!3f293.24079302772515!4f10.605603713276778!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758299318884!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzRpdGpfWUE.!2m2!1d27.33593677395685!2d88.61916587167339!3f253.84811333254663!4f30.98089539811356!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758299388889!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREc2cWJ1andF!2m2!1d27.33580288383717!2d88.61928037024981!3f14.81705463853202!4f22.072751778204577!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758299416060!6m8!1m7!1sCAoSHENJQUJJaEFHYnlmUVF3WEFFMmVudUt3QUNhTTA.!2m2!1d27.33593677395685!2d88.61916587167339!3f120!4f0!5f0.7820865974627469"
+    ]
+  },
+  {
+    "name": "Ralong Monastery",
+    "image": "./images/Ralong_Monastery.jpg",
+    "description": "Built after a Tibetan emperor’s pilgrimage, the monastery preserves manuscripts and murals.",
+    "location": "South Sikkim",
+    "period": "18th Century",
+    "pages": 150,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Nyingma, serene, historical spiritual retreat.",
+    "school": "Kagyu",
+    "sources":["https://www.google.com/maps/embed?pb=!4v1758299506340!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRFNudGV0RVE.!2m2!1d27.32881196804839!2d88.3356471262584!3f220!4f10!5f0.7820865974627469"]
+  },
+  {
+    "name": "Dubdi Monastery",
+    "image": "./images/Dubdi_Monastery.jpg",
+    "description": "Known as the Hermit’s Cell, this is the oldest monastery in Sikkim established in 1701.",
+    "location": "Yuksom, West Sikkim",
+    "period": "17th Century",
+    "pages": 110,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Oldest, tied to Sikkim’s foundation.",
+    "school": "Nyingma",
+    "sources":["https://www.google.com/maps/embed?pb=!4v1758299568310!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQ0VfNWJDZlE.!2m2!1d27.36641022759916!2d88.22990891649984!3f56.223636840907645!4f-10.907379867290572!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758299607797!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V6djI5NUFF!2m2!1d27.36632594282752!2d88.22961482878193!3f3.2673421608732154!4f3.178389138123677!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758299749293!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRFVpdHkxNndF!2m2!1d27.36655288826205!2d88.22999220879571!3f80!4f0!5f0.7820865974627469",
+    "https://www.google.com/maps/embed?pb=!4v1758300207979!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRFVpdHluWGc.!2m2!1d27.36655288826205!2d88.22999220879571!3f281.5557692279531!4f-8.026307976925025!5f0.7820865974627469" ]
+  },
+  {
+    "name": "Kartok Monastery",
+    "image": "./images/Kartok-Monastery-Cover-Photo-840x425.jpg",
+    "description": "A small but sacred monastery known for colorful murals and annual mask dance festivals.",
+    "location": "Yuksom, West Sikkim",
+    "period": "18th Century",
+    "pages": 40,
+    "collections": ["Manuscripts", "Murals", "Documents"],
+    "significance" : "Nyingma, serene, near sacred lake.",
+    "school": "Nyingma",
+    "sources":["https://www.google.com/maps/embed?pb=!4v1758307358126!6m8!1m7!1salHYkZaqN-vrmDgXHJuvkQ!2m2!1d27.24045095593851!2d88.58724627498452!3f259.55460528174046!4f-5.100524498064587!5f0.7820865974627469"]
+  }
+]

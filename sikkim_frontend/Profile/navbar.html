@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .sidebar {
+            background-color: #2d4a76;
+            width: 200px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            position: fixed;
+            height: 100%;
+            transition: left 0.3s ease;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: gold;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #3887fd;
+            color: #d4af37;
+            transform: scale(1.05);
+            box-shadow: rgba(129, 212, 250, 0.673) 0px 4px 8px;
+        }
+
+        .sidebar a.active {
+            background-color: #0f52ba;
+            color: #fdc939;
+            font-weight: bold;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#" data-src="profile_content.html" class="active">Profile</a></li>
+            <li><a href="#" data-src="itinerary.html">Itinerary</a></li>
+            <li><a href="#" data-src="completed.html">Completed Places</a></li>
+            <li><a href="#" data-src="incomplete.html">Incomplete Places</a></li>
+        </ul>
+    </nav>
+    <script src="js/main.js"></script>
+</body>
+</html>

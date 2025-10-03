@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* navbar css */
+
+#navbar {
+    /* border: 0.5px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 60%;
+    height: 7%;
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.156);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.73);
+    transition: all 0.5s ease-out;
+    animation: navbar 1.5s ease-out 1;
+}
+
+@keyframes navbar {
+    from {
+        top: -10%;
+        opacity: 0;
+    }
+
+    to {
+        top: 3%;
+        opacity: 1;
+    }
+}
+
+#navbar div {
+    width: 13%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+#navbar div h4 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #f0f7f7;
+    font-size: 1rem;
+    /* border: 1px solid black; */
+}
+
+#navbar div img {
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    left: 55%;
+    z-index: 100;
+}
+
+#navbar div:hover {
+    background-color: #f0f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbar div:hover h4 {
+    color: #d4af37;
+}
+
+#navbar div:hover img {
+    height: 15%;
+    width: 15%;
+    display: block;
+    position: relative;
+    left: 0%;
+}
+
+#navbar_toggle {
+    /* background-color: black; */
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 101;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+#navbar_toggle:hover {
+    cursor: pointer;
+}
+
+
+#navbar_toggle div {
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    /* margin: 6px 0; */
+    border-radius: 25px;
+    position: relative;
+}
+
+/* navbar css */
+
+/* cover_image css */
+
+.cover_image {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-top: 0%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.cover_image .monastery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    top: 4%;
+    margin-left: 4%;
+    /* border: 1px solid white; */
+    width: 11%;
+    height: 8%;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.156);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.73);
+    border-radius: 25px;
+    cursor: pointer;
+    animation: monastery 1.5s ease-out 1;
+}
+
+@keyframes monastery {
+    from {
+        top: 10%;
+        opacity: 0;
+    }
+
+    to {
+        top: 4%;
+        opacity: 1;
+    }
+}
+
+.cover_image .monastery::before {
+    content: " ";
+    background-color: #f0f7f7;
+    position: absolute;
+    height: 00%;
+    width: 00%;
+    overflow-x: hidden;
+    /* transform: translateX(-50%); */
+    border-radius: 25px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.cover_image .monastery:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.cover_image .monastery:hover h5 {
+    color: #d4af37;
+}
+
+.cover_image .monastery img {
+    width: 15%;
+    height: 42%;
+}
+
+.cover_image .monastery h5 {
+    color: white;
+    font-size: 1rem;
+    /* border: 1px solid red; */
+    /* margin-top: 6%; */
+}
+
+.cover_image .SignUP_Login {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    /* border: 1px solid white; */
+    width: 8%;
+    height: 8%;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.156);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.73);
+    border-radius: 25px;
+    animation: monastery 1.5s ease-out 1;
+}
+
+.cover_image .SignUP_Login button {
+    width: 80%;
+    height: 60%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding-right: 12%;
+}
+
+.cover_image .SignUP_Login button img {
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    left: 55%;
+    z-index: 100;
+}
+
+.cover_image .SignUP_Login button:hover {
+    outline: none;
+    /* border: 1px solid #d4af37; */
+    padding-right: 0%;
+    color: #d4af37;
+    background-color: #f0f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cover_image .SignUP_Login button:hover img {
+    height: 16px;
+    width: 16px;
+    display: block;
+    position: relative;
+    left: 0%;
+}
+
+.cover_image .profile {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    /* border: 1px solid white; */
+    width: 8%;
+    height: 8%;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.156);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.73);
+    border-radius: 25px;
+    animation: monastery 1.5s ease-out 1;
+}
+
+.cover_image .profile button {
+    width: 80%;
+    height: 60%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding-right: 12%;
+}
+
+.cover_image .profile button img {
+    width: 0%;
+    height: 0%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    left: 55%;
+    z-index: 100;
+}
+
+.cover_image .profile button:hover {
+    outline: none;
+    /* border: 1px solid #d4af37; */
+    padding-right: 0%;
+    color: #d4af37;
+    background-color: #f0f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cover_image .profile button:hover img {
+    height: 16px;
+    width: 16px;
+    display: block;
+    position: relative;
+    left: 0%;
+}
+
+.cover_image .cover_image_main img {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("../images/cover_image.jpg"); */
+    background-size: cover;
+    background-position: center;
+    margin-top: 0%;
+    object-fit: cover;
+    filter: brightness(40%);
+    position: absolute;
+    z-index: -10;
+}
+
+.cover_image_heading .heading_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+
+    /* border: 1px solid white; */
+}
+
+.cover_image_heading .heading_div h2 {
+    font-size: 1.8rem;
+    animation: Sikkim_steps 0.8s linear 1;
+    /* border: 1px solid white; */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.cover_image .cover_image_heading .heading_div h1 {
+    color: #fdc939;
+    animation: Sikkim_steps 0.8s linear 1;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3.5rem;
+    display: inline-block;
+    /* border: 1px solid wheat; */
+    width: fit-content;
+}
+
+@keyframes Sikkim_steps {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.cover_image .cover_image_heading .heading_div p {
+    font-size: 1.5rem;
+    margin-top: 2%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* cover_image css */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #e6f7ff;
+    margin: 0;
+}
+
+.header {
+    background:  #4ba3c7;
+    color: #fff;
+    padding: 28px 24px 18px 24px;
+}
+
+.header-title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header-sub {
+    font-size: 16px;
+    color: #ffebc7;
+    margin-top: 4px;
+}
+
+.location-panel {
+    background: #85d2ff95;
+    border-radius: 14px;
+    margin: 30px auto 10px auto;
+    max-width: 700px;
+    padding: 22px 28px 16px 28px;
+    box-shadow: 0 4px 24px rgba(2, 49, 95, 0.348);
+}
+
+.location-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.location-label {
+    color: #023047;
+    font-size: 15px;
+}
+
+.location-value {
+    font-size: 14px;
+    color: #508ca4;
+}
+
+.location-highlight {
+    font-weight: bold;
+    color: #00c2ff;
+    font-size: 15px;
+}
+
+.location-distance {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.distance-far {
+    color: #d24e4e;
+}
+
+.distance-near {
+    color: #4eb85c;
+}
+
+.audio-status-panel {
+    background: #4ba3c7;
+    color: #b1e3f2;
+    border-radius: 14px;
+    margin: 10px auto 10px auto;
+    max-width: 700px;
+    padding: 25px 25px 15px 25px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.cards-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    margin: 19px 0 14px 10px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #674b33;
+}
+
+.monastery-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+#pauseBtn,#resumeBtn,#nextBtn{
+      background: #00c2ff;   /* bright icy cyan */
+  color: #ffffff;        /* deep frost text */
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#pauseBtn:hover,#resumeBtn:hover,#nextBtn:hover{
+     background: #89e0f8;
+}
+
+.monastery-card {
+    background: #ddf6ff;
+    border-radius: 13px;
+    box-shadow: 0 2px 16px #d5bba682;
+    padding: 21px 22px 20px 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 17px;
+    font-weight: bold;
+    color:  #023047;
+    margin-bottom: 4px;
+}
+
+.card-desc {
+    font-size: 14px;
+    color:  #508ca4;
+    margin-bottom: 8px;
+}
+
+.audio-clip-list {
+    margin-bottom: 8px;
+}
+
+.audio-clip-btn {
+    display: block;
+    width: 100%;
+    background: #a5ddf8;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 0 7px 7px;
+    margin-bottom: 4px;
+    color:  #023047;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.audio-clip-btn:hover {
+    background: #b9ecff;
+}
+
+.card-footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-coord {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.distance-badge {
+    background: #ffdbdb;
+    color: #b45252;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px 10px;
+    margin-left: 8px;
+}
+
+.distance-near-badge {
+    background: #d4fbd4;
+    color: #4eb85c;
+}
+
+.play-guide-btn {
+    background: #00c2ff;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 22px;
+    font-size: 16px;
+    color: #023047;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play-guide-btn:hover {
+    background: #89e0f8;
+}
+
+.footer-box {
+    background: #d9f1ff;
+    margin: 34px auto 22px auto;
+    border-radius: 12px;
+    padding: 18px 25px;
+    color:  #023047;
+    font-size: 15px;
+    max-width: 700px;
+}
+
+.audio-controls {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.audio-controls button {
+    padding: 7px 18px;
+    background: #fcc921;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #82561d;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.audio-controls button:last-child {
+    margin-right: 0;
+}
+
+.audio-controls button:hover {
+    background: #ffe7b3;
+}

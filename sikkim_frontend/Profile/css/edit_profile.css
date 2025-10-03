@@ -1,0 +1,72 @@
+body {
+    background-color: #f0f7f7; /* Light pastel teal */
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.edit-container {
+    background-color: #d6e6f2; /* Very light blue */
+    border-radius: 10px;
+    padding: 30px; /* More spacing */
+    box-shadow: rgba(129, 212, 250, 0.3) 0px 19px 38px, rgba(129, 212, 250, 0.25) 0px 15px 12px;
+    max-width: 500px; /* Wider */
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+.edit-container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #0f52ba; /* Royal blue */
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 2px;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #6b8797; /* Grayish blue */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc; /* Light gray */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Almost white */
+    color: #2d4a76; /* Dark navy blue */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3887fd; /* Bright blue */
+    box-shadow: rgba(129, 212, 250, 0.656) 0px 2px 4px;
+}
+
+button {
+    background-color: #0f52ba; /* Royal blue */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #3887fd; /* Bright blue */
+    box-shadow: rgba(129, 212, 250, 0.673) 0px 4px 8px;
+    transform: scale(1.05);
+}

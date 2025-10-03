@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sikkim Monasteries Digital Archive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="VrNav">
+      <h4><img src="./icons/camera.png" alt="" />Virtual Tour</h4>
+    </div>
+    <div id="MapNav">
+      <h4><img src="./icons/location.png" alt="" />Explore map</h4>
+    </div>
+    <div id="Arch">
+      <h4><img src="./icons/folder.png" alt="" />Archive</h4>
+    </div>
+    <div id="EventsNav">
+      <h4><img src="./icons/calendar.png" alt="" />Events</h4>
+    </div>
+    <div id="AudioNav">
+      <h4><img src="./icons/headphones.png" alt="" />Audio</h4>
+    </div>
+    <div id="Services">
+      <h4><img src="./icons/customer-service.png" alt="" />Services</h4>
+    </div>
+  </div>
+
+  <div class="cover_image">
+    <div class="cover_image_main">
+      <img src="./cover_images/CKPA-302859-scaled-8f30a88f.jpeg" alt="" />
+      <!-- <video autoplay muted loop playsinline>
+            <source src="./videos/Sikkim_tourism.mp4" type="video/mp4" />
+          </video> -->
+    </div>
+    <div class="monastery">
+      <img src="./icons/monastery.png" alt="" />
+      <h5>Monastery 360⁰</h5>
+    </div>
+    <header>
+      <h1>Sikkim Monasteries</h1>
+      <p>Discover the mystical beauty of ancient monasteries nestled in the Himalayas. Your spiritual journey through
+        Sikkim's sacred heritage begins here.</p>
+      <div class="controls">
+        <input type="text" id="searchBox" placeholder="Search by name or location..." />
+        <select class="languagePicker" id="languageSelect">
+          <option value="en" selected>English</option>
+          <option value="hi">Hindi</option>
+          <option value="te">Telugu</option>
+          <option value="sk">Tibetan</option>
+          <option value="ne">Nepali</option>
+        </select>
+      </div>
+    </header>
+    <div class="SignUP_Login">
+      <button><img src="./icons/man.png" alt="" />Login</button>
+    </div>
+    <div class="profile">
+      <button><img src="./icons/boy.png" alt="">Profile</button>
+    </div>
+  </div>
+
+  <main>
+    <section id="monastery-list" class="grid">
+      <!-- Monastery cards will be inserted here by script.js -->
+    </section>
+  </main>
+
+  <!-- Template for a monastery card -->
+  <template id="monasteryCardTemplate">
+    <div class="card">
+      <img class="card-img" alt="Monastery image" />
+      <div class="card-content">
+        <h2 class="card-title"></h2>
+        <p class="card-description"></p>
+        <div class="audio-controls">
+          <button class="play-btn"><i class="fa fa-play"></i></button>
+          <button class="pause-btn"><i class="fa fa-pause"></i></button>
+          <button class="resume-btn"><i class="fa fa-forward"></i></button>
+          <button class="stop-btn"><i class="fa fa-stop"></i></button>
+          <span class="status"></span>
+        </div>
+        <div class="card-actions">
+          <a class="details-link" href="#">View Details</a>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

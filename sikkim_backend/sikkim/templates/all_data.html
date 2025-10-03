@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Users & Guides</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Users</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <!-- add other fields as per your `Users` model -->
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.UserName }}</td>
+            <td>{{ user.PassWord }}</td>
+            <td>{{ user.Mail_id }}</td>
+            <td>{{ user.User_Number }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5">No users found.</td></tr>
+        {% endfor %}
+    </table>
+
+    <h1>Guides</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Guide Username</th>
+            <th>Full Name</th>
+            <th>Phone</th>
+            <th>Experience</th>
+            <th>Gender</th>
+            <th>Languages</th>
+            <th>password</th>
+        </tr>
+        {% for guide in guides %}
+        <tr>
+            <td>{{ guide.id }}</td>
+            <td>{{ guide.Guide_Username }}</td>
+            <td>{{ guide.Guide_FullName }}</td>
+            <td>{{ guide.Guide_Number }}</td>
+            <td>{{ guide.Guide_experience }}</td>
+            <td>{{ guide.Guide_Gender }}</td>
+            <td>{{ guide.Guide_Languages_know }}</td>
+            <td>{{guide.Guide_PassWord}}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="7">No guides found.</td></tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

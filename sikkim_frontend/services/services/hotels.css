@@ -1,0 +1,142 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+body {
+  background-color: #F0F7FF;
+  color: #434C5E;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.searchbar {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 2px solid #FFD700;
+  transition: all ease 0.25s;
+}
+
+#search_bar {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #434C5E;
+}
+.searchbar:hover{
+  transform: scale(1.05);
+}
+
+.hotels_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+
+.hotels_info {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 2px solid #55caf1;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.hotels_info:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(56,135,253,0.2);
+   border: 2px solid #a0e4fa;
+}
+
+
+.hotel_image_card {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.hotel_image_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.hotels_info:hover .hotel_image_card img {
+  transform: scale(1.08);
+}
+
+.hotel_details {
+  padding: 1.2rem;
+}
+
+.hotel_details h2 {
+  font-size: 1.4rem;
+  color: #0f52ba;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #FFD700;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.hotel_details p {
+  margin-bottom: 0.6rem;
+  color: #434C5E;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.hotel_details i {
+  margin-right: 8px;
+  color: #0f52ba;
+  transition: color 0.3s;
+}
+
+.hotel_details p:hover i {
+  color: #FFD700;
+}
+
+
+.rating {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: #FFD700;
+  color: #0f52ba;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+

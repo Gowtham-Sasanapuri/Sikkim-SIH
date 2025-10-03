@@ -1,0 +1,44 @@
+[
+    {
+        "name":"The Nettle and Farmstay",
+        "location":"Pelling",
+        "image":"https://q-xx.bstatic.com/xdata/images/hotel/square600/400731965.webp?k=08bbde704d75c87787220c600c7132efab53743e6b4cf177e069273a2d53611b&o=",
+        "rating":"9.0",
+        "description":"The Nettle and Fern Farmstay features a garden, shared lounge, a terrace and restaurant in Pelling. There is free private parking and the property provides paid airport shuttle service."
+    },
+    {
+        "name":"Jo'stel Dream Glory Hotel and Bar",
+        "location":"Gangtok",
+        "image":"https://q-xx.bstatic.com/xdata/images/hotel/square600/670440201.webp?k=b5219258f985252d78a6a9612b1e3b53c1ab0a57298dbcda9706ce2ceba394d5&o=",
+        "rating":"9.4",
+        "description":"Located in Gangtok, 2.6 miles from Namgyal Institute of Tibetology, Jo'stel Dream Glory Hotel and Bar - Near MG Marg provides accommodations with a garden, free private parking."
+    },
+    {
+        "name":"The Staynest retreat and SPA",
+        "location":"Gangtok",
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square600/632985149.webp?k=cb8014ea0a8f8b4c52bb98e3a1119fa0e88eafda0139e6e0d8a5e6ec3965dc09&o=",
+        "rating":"8.9",
+        "description":"Located in Gangtok, 1.4 miles from Palzor Stadium, The Staynest retreat and SPA Gangtok 4 STAR LUXURY RESORT has accommodations with an outdoor swimming pool, free private parking, a fitness center."
+    },
+    {
+        "name":"Summit Tashi Ghang Heritage Resort",
+        "location":"Pelling",
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square600/412378539.webp?k=37e123c2d5e3e9a348339b0a5a4fdea110e554846eefccb676a17f87b3573805&o=",
+        "rating":"8.5",
+        "description":"Summit Tashi Ghang Heritage Resort has a garden, shared lounge, a restaurant and bar in Pelling. Featuring room service, this property also provides guests with a playground."
+    },
+    {
+        "name":"Tempo Heritage Resort & Spa",
+        "location":"Gangtok",
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square600/495730416.webp?k=e919a2f62f958980972bbcd7d07930240e825ae64d334e503a56a0fa6ec8ae50&o=",
+        "rating":"7.8",
+        "description":"Located in Gangtok, a 10-minute walk from Enchey Monastery, Tempo Heritage Resort & Spa provides accommodations with a fitness center, free private parking, a garden and a restaurant."
+    },
+      {
+        "name":"Sakura Garden Retreat",
+        "location":"Ravangla",
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square600/654425313.webp?k=ea90f9834961931ca2b96a920d8e3abba2f8302d7daabaf3626e3157e751be35&o=",
+        "rating":"7.4",
+        "description":"Sakura Garden Retreat, Ravangla has a garden, terrace, a restaurant and bar in Ravangla. This 3-star hotel offers room service, a 24-hour front desk and free WiFi."
+    }
+]

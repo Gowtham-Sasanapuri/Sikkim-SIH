@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Bumchu Festival",
+    "monasteryInvolvement": "Yes",
+    "price": 500,
+    "currency": "INR",
+    "totalSeats": 200,
+    "remainingSeats": 150
+  },
+  {
+    "name": "International Flower & Garden Festival",
+    "monasteryInvolvement": "No",
+    "price": 300,
+    "currency": "INR",
+    "totalSeats": 500,
+    "remainingSeats": 400
+  },
+  {
+    "name": "Khangchendzonga Festival / Tourist Festival",
+    "monasteryInvolvement": "No",
+    "price": 400,
+    "currency": "INR",
+    "totalSeats": 300,
+    "remainingSeats": 250
+  },
+  {
+    "name": "Enchey Chaam",
+    "monasteryInvolvement": "Yes",
+    "price": 600,
+    "currency": "INR",
+    "totalSeats": 150,
+    "remainingSeats": 100
+  },
+  {
+    "name": "Rumtek Chaams",
+    "monasteryInvolvement": "Yes",
+    "price": 550,
+    "currency": "INR",
+    "totalSeats": 120,
+    "remainingSeats": 80
+  },
+  {
+    "name": "Mangan Music Festival",
+    "monasteryInvolvement": "No",
+    "price": 350,
+    "currency": "INR",
+    "totalSeats": 600,
+    "remainingSeats": 500
+  }
+]

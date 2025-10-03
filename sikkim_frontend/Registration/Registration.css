@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-color: #f0f7f7;
+    /* padding-bottom: 20px; */
+}
+
+#container {
+    width: 100%;
+}
+
+#cover_image img {
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    filter: brightness(40%);
+    z-index: -1;
+}
+
+#Header {
+    margin-top: 1%;
+}
+
+#Header h1 {
+    font-size: 3rem;
+    color: #d4af37;
+}
+
+#Header p {
+    color: #e3edfd;
+    font-size: 1.2rem;
+}
+
+#Header h1,
+#Header p {
+    text-align: center;
+}
+
+#Selector {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+#Selector .Registration_and_Login_toggler {
+    /* border: 1px solid red; */
+    width: 100%;
+    background-color: transparent;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Register_btn,
+#Login_btn {
+    height: 60%;
+    width: 15%;
+    border-radius: 15px;
+    border: none;
+    /* background: #d6ecff; */
+    font-size: 1.5rem;
+    color: #e9f2ff;
+    cursor: pointer;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    transition: all 0.3s linear;
+}
+
+#Register_btn:hover,
+#Login_btn:hover {
+    transform: translateY(-15%);
+    box-shadow: 0 8px 20px rgba(212, 211, 211, 0.25),
+        0 4px 10px rgba(84, 84, 84, 0.15) inset;
+}
+
+#Register_btn.active,
+#Login_btn.active {
+    border-top: 5px solid #ecf4ff7e;
+}
+
+#role_select {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#role_select p {
+    font-size: 1.6rem;
+    color: #e3e7ed;
+    /* border: 1px solid red; */
+    width: 60%;
+    text-align: center;
+}
+
+#role {
+    height: 5vh;
+    width: 25%;
+    padding-left: 5%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0.5px solid #dbe4f159;
+    accent-color: rgb(174, 219, 255);
+    /* border: 10px solid red; */
+}
+
+select {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    color: #e3e7ed;
+}
+
+option {
+    border-radius: 10px;
+    border: none;
+    color: #0091ff;
+    background-color: transparent;
+    accent-color: transparent;
+}
+
+#Forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Forms>div.active {
+    /* border: 1px solid red; */
+    display: block;
+    padding: 1%;
+    background-color: #d6e6f2;
+    box-shadow: 0 1.5px 8px 0 rgba(129, 212, 250, 0.821), 0 1px 20px 0 rgba(129, 212, 250, 0.897);
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    /* background-color: red; */
+    transition: all 0.5s linear;
+}
+
+#Forms>div:not(.active) {
+    display: none;
+}
+
+#Registration_form>div.active {
+    display: block;
+}
+
+#Registration_form>div:not(.active) {
+    display: none;
+}
+
+#guide_form {
+    /* border: 1px solid green; */
+    padding-left: 3%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 60vh; */
+}
+
+form {
+    /* margin-top: 2%; */
+    /* background-color: #f0f7f7; */
+    border-radius: 25px;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* border: 1px solid red; */
+    width: 100%;
+    /* left: 50%; */
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 40vh;
+    /* transform: translateX(-50%); */
+}
+
+form label {
+    font-size: 1.2rem;
+    color: #e7f3fa;
+    /* border: 1px solid red; */
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 50%;
+    padding-left: 3%;
+    position: relative;
+    right: 0%;
+    border-bottom: 3px solid #b0d0ff36;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: #eceff2;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form .submit_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rebeccapurple; */
+    width: 100%;
+    height: 10%;
+}
+
+form .submit_btn button {
+    font-size: 1.5rem;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    color: #d6e6f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    /* margin-top: 2%; */
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.3px);
+border: 1px solid rgba(255, 255, 255, 0.31);
+
+}
+
+#Gender_div {
+    display: flex;
+    width: 50%;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+
+}
+
+#Gender_div label {
+    display: flex;
+    /* border: 1px solid red; */
+    width: fit-content;
+}
+
+form .submit_btn button:hover {
+    transform: translateY(-15%);
+    box-shadow: 0 8px 20px rgba(212, 211, 211, 0.25),
+        0 4px 10px rgba(84, 84, 84, 0.15) inset;
+}
+
+#user_form {
+
+    /* border: 1px solid green; */
+    padding-left: 3%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+input:focus {
+    border: none;
+    transition: all 0.3s linear;
+
+    /* border-bottom: 3px solid #becfe8; */
+    box-shadow: 0 0.5px 8px 0 rgba(105, 167, 218, 0.677), 0 1px 20px 0 rgba(104, 144, 201, 0.956);
+}
+
+input::placeholder {
+    font-size: 1rem;
+    color: #d6e6f26f;
+}
+
+#loginForm {
+    height: 30vh;
+}
+
+.forgot_password {
+    text-align: right;
+    /* align it to the right side */
+    margin-top: 10px;
+}
+
+.forgot_password a {
+    font-size: 0.95rem;
+    color: #d7e2f166;
+    /* royal blue (matches inputs) */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.forgot_password a:hover {
+    color: #eff8ff;
+    /* brighter blue on hover */
+    text-decoration: underline;
+    /* underline only on hover */
+}
+
+.forgot_password a:active {
+    color: #d4af37;
+    /* gold accent on click */
+}

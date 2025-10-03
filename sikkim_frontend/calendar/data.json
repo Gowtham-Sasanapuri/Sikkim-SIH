@@ -1,0 +1,287 @@
+{
+  "festivals": [
+    {
+      "id": 1,
+      "name": "Maghe Sankranti",
+      "date": "14 January (fixed, Nepali calendar)",
+      "month": "January",
+      "image": "assets/megha.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 2,
+      "name": "Sonam Lochar / Tamang New Year (Sonam Lhosar)",
+      "date": "30 January",
+      "month": "January",
+      "image": "assets/sonam_lochar.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 3,
+      "name": "Losar / Tibetan New Year",
+      "date": "28 February",
+      "month": "February",
+      "image": "assets/losar.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 4,
+      "name": "Bumchu Festival",
+      "date": "14 March",
+      "month": "March",
+      "image": "assets/bumchu.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 5,
+      "name": "Holi",
+      "date": "14 March",
+      "month": "March",
+      "image": "assets/holi.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 6,
+      "name": "Sakewa (Sakela)",
+      "date": "18 April",
+      "month": "April",
+      "image": "assets/sakewa.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 7,
+      "name": "Ram Navami / Chaite Dasain",
+      "date": "4 March",
+      "month": "April",
+      "image": "assets/ram.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 8,
+      "name": "Saga Dawa",
+      "date": "11 June",
+      "month": "June",
+      "image": "assets/saga_dawa.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 9,
+      "name": "International Flower & Garden Festival",
+      "date": "1 May",
+      "month": "May",
+      "image": "assets/flower.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 10,
+      "name": "Khangchendzonga Festival / Tourist Festival",
+      "date": "Often around May / peak tourist season",
+      "month": "May",
+      "image": "assets/khang.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 11,
+      "name": "Drupka Teshi (Drukpa Tshe-zi)",
+      "date": "28 july",
+      "month": "July",
+      "image": "assets/drukpa.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 12,
+      "name": "Tendong Lho Rum Faat",
+      "date": "8 August",
+      "month": "August",
+      "image": "assets/Tendong.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 13,
+      "name": "Pang Lhabsol",
+      "date": "7 September",
+      "month": "September",
+      "image": "assets/pang.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 14,
+      "name": "Indra Jatra (Indrajatra)",
+      "date": "Nepali calendar date (≈ September)",
+      "month": "September",
+      "image": "assets/indrajatra.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 15,
+      "name": "Dasain / Durga Puja",
+      "date": "29 September",
+      "month": "September",
+      "image": "assets/dasain.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 16,
+      "name": "Deepawali / Tihar (Diwali)",
+      "date": "20 October",
+      "month": "October",
+      "image": "assets/diwali.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 17,
+      "name": "Lhabab Duchen",
+      "date": "11 November",
+      "month": "November",
+      "image": "assets/dunchen.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 18,
+      "name": "Tamu Lochar / Gurung New Year",
+      "date": "30 December",
+      "month": "December",
+      "image": "assets/tamu_lhosar.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 19,
+      "name": "Kagyed / Kagyat Dance",
+      "date": "28-29th day of 10th Tibetan month (≈ early December)",
+      "month": "December",
+      "image": "assets/Kagyed.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 20,
+      "name": "Enchey Chaam",
+      "date": "18-19th day of 11th Tibetan lunar month (≈ December)",
+      "month": "December",
+      "image": "assets/enchey.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 21,
+      "name": "Rumtek Chaams",
+      "date": "Just before Tibetan New Year (Date varies, days before Losar)",
+      "month": "December",
+      "image": "assets/rumtak.jpg",
+      "type": "religious"
+    },
+    {
+      "id": 22,
+      "name": "Losoong / Namsoong",
+      "date": "20 December",
+      "month": "December",
+      "image": "assets/losoong.jpg",
+      "type": "festival"
+    },
+    {
+      "id": 23,
+      "name": "Mangan Music Festival",
+      "date": "13 December",
+      "month": "December",
+      "image": "assets/music.jpg",
+      "type": "festival"
+    }
+  ],
+  "locations": {
+    "Maghe Sankranti": "All Communities",
+    "Sonam Lochar / Tamang New Year (Sonam Lhosar)": "Tamang Communities",
+    "Losar / Tibetan New Year": "All Monasteries",
+    "Bumchu Festival": "Tashiding Monastery",
+    "Holi": "All Communities",
+    "Sakewa (Sakela)": "Ravangla & Namchi",
+    "Ram Navami / Chaite Dasain": "All Hindu Temples",
+    "Saga Dawa": "Rumtek Monastery & All Monasteries",
+    "International Flower & Garden Festival": "Rajbhawan, Gangtok",
+    "Khangchendzonga Festival / Tourist Festival": "Rabdentse & Yuksom",
+    "Drupka Teshi (Drukpa Tshe-zi)": "All Drukpa Monasteries",
+    "Tendong Lho Rum Faat": "Rabdentse & Various Locations",
+    "Pang Lhabsol": "Rumtek & Pemayangtse Monasteries",
+    "Indra Jatra (Indrajatra)": "Gangtok & Nearby Areas",
+    "Dasain / Durga Puja": "All Communities",
+    "Deepawali / Tihar (Diwali)": "All Communities",
+    "Lhabab Duchen": "All Monasteries",
+    "Tamu Lochar / Gurung New Year": "Gurung Communities",
+    "Kagyed / Kagyat Dance": "Rumtek Monastery",
+    "Enchey Chaam": "Enchey Monastery, Gangtok",
+    "Rumtek Chaams": "Rumtek Monastery",
+    "Losoong / Namsoong": "All Communities & Monasteries",
+    "Mangan Music Festival": "Mangan Town"
+  },
+  "descriptions": {
+    "Maghe Sankranti": "Major Nepali festival marking the transition of the sun into Capricorn, celebrated with holy baths and feasts.",
+    "Sonam Lochar / Tamang New Year (Sonam Lhosar)": "Tamang community celebrates their New Year with traditional dances and feasts.",
+    "Losar / Tibetan New Year": "The most important festival in Tibetan Buddhism, celebrating the new year with prayers, dances, and traditional rituals.",
+    "Bumchu Festival": "Sacred water ceremony believed to predict the coming year and cleanse sins of devotees.",
+    "Holi": "Festival of colors celebrating spring and the triumph of good over evil.",
+    "Sakewa (Sakela)": "Traditional Rai harvest festival with vibrant dances and nature worship.",
+    "Ram Navami / Chaite Dasain": "Celebrates the birth of Lord Rama with fasting and temple visits.",
+    "Saga Dawa": "Birthday and enlightenment of Lord Buddha - a time for pilgrimage, prayers, and releasing animals.",
+    "International Flower & Garden Festival": "Annual flower show showcasing Sikkim's rich floral biodiversity.",
+    "Khangchendzonga Festival / Tourist Festival": "Cultural extravaganza celebrating Sikkim's patron deity and tourism.",
+    "Drupka Teshi (Drukpa Tshe-zi)": "Celebrates the birth of Lord Buddha and the arrival of Drukpa lineage in Bhutan.",
+    "Tendong Lho Rum Faat": "Lepecha festival commemorating the creation myth of Sikkim with bamboo worship.",
+    "Pang Lhabsol": "Festival honoring Mount Khangchendzonga with masked dances and offerings.",
+    "Indra Jatra (Indrajatra)": "Newar festival featuring masked dances and chariot processions honoring Lord Indra.",
+    "Dasain / Durga Puja": "Major Hindu festival celebrating victory of good over evil with family gatherings.",
+    "Deepawali / Tihar (Diwali)": "Festival of lights celebrating the return of Lord Rama with colorful decorations and feasts.",
+    "Lhabab Duchen": "Celebrates Buddha's descent from heaven, a day of special merit accumulation.",
+    "Tamu Lochar / Gurung New Year": "Gurung community welcomes their New Year with traditional rituals and community gatherings.",
+    "Kagyed / Kagyat Dance": "Sacred masked dance festival performed by monks to dispel negative forces.",
+    "Enchey Chaam": "Sacred masked dances at Enchey Monastery depicting Buddhist teachings.",
+    "Rumtek Chaams": "Grand masked dance festival at Rumtek Monastery before Tibetan New Year.",
+    "Losoong / Namsoong": "Sikkimese New Year celebrated with archery contests and traditional dances.",
+    "Mangan Music Festival": "Celebration of Sikkimese music and cultural performances."
+  },
+  "timeInfo": {
+    "Losar / Tibetan New Year": "6:00 AM - 8:00 PM",
+    "Bumchu Festival": "4:00 AM - 12:00 PM",
+    "Saga Dawa": "Sunrise to Sunset",
+    "Kagyed / Kagyat Dance": "10:00 AM - 4:00 PM",
+    "Enchey Chaam": "11:00 AM - 3:00 PM",
+    "Rumtek Chaams": "9:00 AM - 5:00 PM"
+  },
+  "durationDays": {
+    "Losar / Tibetan New Year": "3 days",
+    "Dasain / Durga Puja": "10 days",
+    "Deepawali / Tihar (Diwali)": "5 days",
+    "Saga Dawa": "15 days",
+    "Bumchu Festival": "2 days",
+    "Kagyed / Kagyat Dance": "2 days"
+  },
+  "highlights": {
+    "Maghe Sankranti": ["Holy Bathing", "Traditional Feast", "Khichdi", "Community Gathering"],
+    "Sonam Lochar / Tamang New Year (Sonam Lhosar)": ["Tamang Dances", "Traditional Foods", "Community Prayers", "Cultural Shows"],
+    "Losar / Tibetan New Year": ["Cham Dance", "Traditional Foods", "Prayer Ceremonies", "Butter Lamp Lighting"],
+    "Bumchu Festival": ["Holy Water Ceremony", "Pilgrimage", "Merit Making", "Community Gathering"],
+    "Holi": ["Color Festival", "Spring Celebrations", "Community Gatherings", "Traditional Sweets"],
+    "Sakewa (Sakela)": ["Traditional Dances", "Nature Worship", "Community Feast", "Sacred Rituals"],
+    "Ram Navami / Chaite Dasain": ["Temple Visits", "Fasting Rituals", "Bhajans & Kirtans", "Spiritual Gatherings"],
+    "Saga Dawa": ["Candle Processions", "Prayer Wheels", "Monastery Visits", "Animal Liberation"],
+    "International Flower & Garden Festival": ["Flower Displays", "Garden Exhibitions", "Cultural Stalls", "Live Performances"],
+    "Khangchendzonga Festival / Tourist Festival": ["Cultural Shows", "Traditional Dances", "Food Stalls", "Heritage Walks"],
+    "Drupka Teshi (Drukpa Tshe-zi)": ["Monastic Prayers", "Drukpa Chants", "Community Blessings", "Cultural Exchange"],
+    "Tendong Lho Rum Faat": ["Bamboo Worship", "Lepecha Dances", "Mythological Plays", "Nature Rituals"],
+    "Pang Lhabsol": ["Masked Dances", "Mountain Worship", "Archery Display", "Sacred Offerings"],
+    "Indra Jatra (Indrajatra)": ["Masked Dances", "Chariot Processions", "Cultural Performances", "Street Festivals"],
+    "Dasain / Durga Puja": ["Family Gatherings", "Tika Ceremony", "Animal Sacrifice", "Feasting"],
+    "Deepawali / Tihar (Diwali)": ["Lakshmi Puja", "Light Decorations", "Animal Worship", "Family Feasts"],
+    "Lhabab Duchen": ["Prayer Ceremonies", "Merit Accumulation", "Temple Visits", "Butter Lamp Offerings"],
+    "Tamu Lochar / Gurung New Year": ["Gurung Rituals", "Traditional Music", "Community Dance", "Feast"],
+    "Kagyed / Kagyat Dance": ["Sacred Masked Dances", "Monastic Rituals", "Protective Ceremonies", "Spiritual Performances"],
+    "Enchey Chaam": ["Sacred Masked Dances", "Buddhist Teachings", "Monastic Performances", "Spiritual Blessings"],
+    "Rumtek Chaams": ["Grand Masked Dances", "Monastic Performances", "Sacred Rituals", "Cultural Showcase"],
+    "Losoong / Namsoong": ["Archery Contests", "Traditional Dances", "Cultural Performances", "Community Celebrations"],
+    "Mangan Music Festival": ["Live Music", "Cultural Performances", "Local Artists", "Music Competitions"]
+  },
+  "bookingRequired": [
+    "Bumchu Festival",
+    "International Flower & Garden Festival",
+    "Khangchendzonga Festival / Tourist Festival",
+    "Enchey Chaam",
+    "Rumtek Chaams",
+    "Mangan Music Festival"
+  ]
+}

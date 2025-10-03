@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Monastery Details</title>
+  <link rel="stylesheet" href="details.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1 id="monasteryName">Monastery</h1>
+    <div class="header-buttons">
+      <button id="backBtn" class="btn small"><i class="fa-solid fa-arrow-left"></i> Back</button>
+      <button id="downloadAll" class="btn small"><i class="fa-solid fa-download"></i> Download All</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Monastery overview -->
+    <section id="overview"></section>
+    <hr>
+
+    <!-- Collections (Manuscripts, Murals, Documents) -->
+    <section id="collectionsContainer"></section>
+  </main>
+
+  <!-- Audio will be handled by JS inside each card -->
+
+  <script src="details.js"></script>
+</body>
+</html>

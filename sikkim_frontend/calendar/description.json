@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "name": "Maghe Sankranti",
+    "date": "14 January (fixed, Nepali calendar)",
+    "month": "January",
+    "image": "assets/megha.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 2,
+    "name": "Sonam Lochar / Tamang New Year (Sonam Lhosar)",
+    "date": "Magha Shukla Pratipada of Tamang calendar (≈ Jan-Feb)",
+    "month": "January",
+    "image": "assets/sonam_lochar.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 3,
+    "name": "Losar / Tibetan New Year",
+    "date": "1st day of 1st month of Tibetan lunar calendar (≈ Jan-Feb)",
+    "month": "January",
+    "image": "assets/losar.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 4,
+    "name": "Bumchu Festival",
+    "date": "14-15th day of the 1st Tibetan lunar month (≈ Feb-Mar)",
+    "month": "February",
+    "image": "assets/bumchu.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 5,
+    "name": "Holi",
+    "date": "Hindu Phalguna full moon (≈ March)",
+    "month": "March",
+    "image": "assets/holi.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 6,
+    "name": "Sakewa (Sakela)",
+    "date": "Full moon of Baisakh (≈ April-May)",
+    "month": "April",
+    "image": "assets/sakewa.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 7,
+    "name": "Ram Navami / Chaite Dasain",
+    "date": "Spring (≈ April) per lunar Hindu calendar",
+    "month": "April",
+    "image": "assets/ram.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 8,
+    "name": "Saga Dawa",
+    "date": "Full moon of the 4th Tibetan month (≈ May-June)",
+    "month": "May",
+    "image": "assets/saga_dawa.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 9,
+    "name": "International Flower & Garden Festival",
+    "date": "May (≈ every year)",
+    "month": "May",
+    "image": "assets/flower.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 10,
+    "name": "Khangchendzonga Festival / Tourist Festival",
+    "date": "Often around May / peak tourist season",
+    "month": "May",
+    "image": "assets/khang.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 11,
+    "name": "Drupka Teshi (Drukpa Tshe-zi)",
+    "date": "4th day of 6th month in Tibetan calendar (≈ July/August)",
+    "month": "July",
+    "image": "assets/drukpa.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 12,
+    "name": "Tendong Lho Rum Faat",
+    "date": "3rd month of Tibetan lunar calendar (≈ July-August)",
+    "month": "July",
+    "image": "assets/Tendong.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 13,
+    "name": "Pang Lhabsol",
+    "date": "15th day of 7th Tibetan month (≈ late August / early September)",
+    "month": "August",
+    "image": "assets/pang.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 14,
+    "name": "Indra Jatra (Indrajatra)",
+    "date": "Nepali calendar date (≈ September)",
+    "month": "September",
+    "image": "assets/indrajatra.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 15,
+    "name": "Dasain / Durga Puja",
+    "date": "Hindu lunar month (≈ September-October)",
+    "month": "September",
+    "image": "assets/dasain.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 16,
+    "name": "Deepawali / Tihar (Diwali)",
+    "date": "About fortnight after Dasain (≈ October/November)",
+    "month": "October",
+    "image": "assets/diwali.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 17,
+    "name": "Lhabab Duchen",
+    "date": "22nd day of 9th Tibetan month (≈ November)",
+    "month": "November",
+    "image": "assets/dunchen.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 18,
+    "name": "Tamu Lochar / Gurung New Year",
+    "date": "Per Gurung calendar (≈ Dec-Jan)",
+    "month": "December",
+    "image": "assets/tamu_lhosar.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 19,
+    "name": "Kagyed / Kagyat Dance",
+    "date": "28-29th day of 10th Tibetan month (≈ early December)",
+    "month": "December",
+    "image": "assets/Kagyed.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 20,
+    "name": "Enchey Chaam",
+    "date": "18-19th day of 11th Tibetan lunar month (≈ December)",
+    "month": "December",
+    "image": "assets/enchey.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 21,
+    "name": "Rumtek Chaams",
+    "date": "Just before Tibetan New Year (Date varies, days before Losar)",
+    "month": "December",
+    "image": "assets/rumtak.jpg",
+    "type": "religious"
+  },
+  {
+    "id": 22,
+    "name": "Losoong / Namsoong",
+    "date": "1st day of 11th Tibetan lunar month (≈ December)",
+    "month": "December",
+    "image": "assets/losoong.jpg",
+    "type": "festival"
+  },
+  {
+    "id": 23,
+    "name": "Mangan Music Festival",
+    "date": "Usually December",
+    "month": "December",
+    "image": "assets/music.jpg",
+    "type": "festival"
+  }
+]

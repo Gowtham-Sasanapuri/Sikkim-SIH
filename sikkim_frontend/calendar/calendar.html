@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim Cultural Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="VrNav">
+            <h4><img src="./icons/camera.png" alt="" />Virtual Tour</h4>
+        </div>
+        <div id="MapNav">
+            <h4><img src="./icons/location.png" alt="" />Explore map</h4>
+        </div>
+        <div id="Arch">
+            <h4><img src="./icons/folder.png" alt="" />Archive</h4>
+        </div>
+        <div id="EventsNav">
+            <h4><img src="./icons/calendar.png" alt="" />Events</h4>
+        </div>
+        <div id="AudioNav">
+            <h4><img src="./icons/headphones.png" alt="" />Audio</h4>
+        </div>
+        <div id="Services">
+            <h4><img src="./icons/customer-service.png" alt="" />Services</h4>
+        </div>
+    </div>
+    <div class="cover_image">
+        <div class="cover_image_main">
+            <img src="./cover_images/Learn Maruni Sikkim Dance_1551250604.jpg" alt="" />
+            <!-- <video autoplay muted loop playsinline>
+                <source src="./videos/Sikkim_tourism.mp4" type="video/mp4" />
+            </video> -->
+        </div>
+        <div class="monastery">
+            <img src="./icons/monastery.png" alt="" />
+            <h5>Monastery 360⁰</h5>
+        </div>
+        <div class="cover_image_heading">
+            <div class="heading_div">
+                <h1>Sikkim Cultural Calendar</h1>
+                <h2>Discover the vibrant festivals and traditions of Sikkim</h2>
+            </div>
+        </div>
+        <div class="search_cal">
+            <div class="search-container">
+                <input type="text" id="festivalSearch" placeholder="Search for a festival...">
+            </div>
+            <div class="toggle-container">
+                <button id="toggleCalendar" class="calendar-toggle-btn">📅 Open Calendar</button>
+            </div>
+        </div>
+        <div class="SignUP_Login">
+            <button><img src="./icons/man.png" alt="" />Login</button>
+        </div>
+        <div class="profile">
+            <button><img src="./icons/boy.png" alt="">Profile</button>
+        </div>
+    </div>
+    <!-- <div class="search_cal">
+        <div class="search-container">
+            <input type="text" id="festivalSearch" placeholder="Search for a festival...">
+        </div>
+        <div class="toggle-container">
+            <button id="toggleCalendar" class="calendar-toggle-btn">📅 Open Calendar</button>
+        </div>
+    </div> -->
+
+    <div class="filter-container">
+        <div class="filter-row">
+            <div class="filter-group">
+                <label for="monthFilter">Filter by Month:</label>
+                <select id="monthFilter">
+                    <option value="all">All Months</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="bookingFilter">Filter by Access:</label>
+                <select id="bookingFilter">
+                    <option value="all">All Festivals</option>
+                    <option value="booking">Booking Required</option>
+                    <option value="open">Open for All</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="calendar-note">
+        <p>Note: Dates are for 2025. For other years, dates may vary due to the Tibetan lunar calendar and other
+            traditional calendars used in Sikkim.</p>
+    </div>
+
+    <div class="toggle-group">
+        <input type="checkbox" id="monasteryToggle">
+        <label for="monasteryToggle">Featured in Monastery</label>
+    </div>
+
+    <div id="calendarContainer" class="calendar-container">
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth" class="nav-btn">‹</button>
+                <h2 id="monthTitle">January 2025</h2>
+                <button id="nextMonth" class="nav-btn">›</button>
+            </div>
+            <div id="calendarMain" class="calendar_main"></div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h2 id="calendarTitle">Cultural Calendar</h2>
+        <span id="eventCount" class="event-count">23 events</span>
+    </div>
+
+    <div id="festival-container" class="festival-grid"></div>
+
+    <footer>
+        <p>Made with ❤️ for Monastery360 | Cultural Preservation of Sikkim</p>
+    </footer>
+
+    <div id="bookingModal" class="booking-modal">
+        <div class="booking-modal-content">
+            <h4 id="modalFestivalName">Book Festival</h4>
+            <p id="modalFestivalDetails" class="description"></p>
+            <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+            <p><strong>Remaining Seats:</strong> <span id="modalSeats"></span></p>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="numTickets">Number of Tickets:</label>
+                    <input type="number" id="numTickets" min="1" max="5" value="1" required>
+                </div>
+                <button type="submit" class="btn btn-book">Confirm Booking</button>
+            </form>
+            <button id="closeModal" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+
+</html>

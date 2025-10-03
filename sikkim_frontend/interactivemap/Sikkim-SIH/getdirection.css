@@ -1,0 +1,153 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  background: #cfdcee;
+  padding: 30px;
+}
+
+#home {
+  /* position: fixed;       stays in place */
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  width: 14%;
+  /* border: 1px solid red; */
+}
+
+#home button i{
+  height: 10px;
+  width: 10px;
+  display: block;
+  /* width: 100%; */
+  /* transform: translateX(90px); */
+  transition: all 0.3s ease-in-out;
+}
+
+#home button {
+  background: linear-gradient(135deg, #a8e6ff, #d0f0ff); /* icy blue gradient */
+  color: #04395e;        /* deep frosty navy text */
+  border: none;
+  /* padding: 12px 22px; */
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;   /* pill shape */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.25); /* soft icy shadow */
+  backdrop-filter: blur(6px); /* glassy look */
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#home button:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(135deg, #89d8f3, #b9ecff);
+  box-shadow: 0 6px 18px rgba(0, 64, 128, 0.35);
+}
+
+
+
+
+#map { 
+  height: 600px;
+  width: 1000px;
+ }
+
+
+    main {
+      flex: 1;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      /* margin-top: 2%; */
+    }
+    #map {
+      flex: 2;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    #infoBox {
+      flex: 1;
+      background: #B4EBE6;
+      border-radius: 10px;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    #infoBox h3 {
+      margin-bottom: 8px;
+      color: black;
+    }
+    #infoBox p {
+      font-size: 14px;
+      color: black;
+      margin-bottom: 10px;
+    }
+    #infoBox button {
+      background: black;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 6px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    #infoBox button:hover {
+      background: white;
+      color: black;
+    }
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.images-container img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.images-container img:hover {
+  transform: scale(1.05);
+}
+#infoBox {
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  background: #f9f9f9;
+  border-left: 2px solid #ccc;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.monastery-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.monastery-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.monastery-card h4 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.monastery-card ul {
+  padding-left: 20px;
+  margin: 0 0 10px 0;
+}
+

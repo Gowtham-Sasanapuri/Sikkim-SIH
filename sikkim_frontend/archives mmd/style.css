@@ -1,0 +1,653 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  /* border: 0.5px solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 60%;
+  height: 7%;
+  border-radius: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  transition: all 0.5s ease-out;
+  animation: navbar 1.5s ease-out 1;
+}
+
+@keyframes navbar {
+  from {
+    top: -10%;
+    opacity: 0;
+  }
+
+  to {
+    top: 3%;
+    opacity: 1;
+  }
+}
+
+#navbar div {
+  width: 13%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#navbar div h4 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  color: #f0f7f7;
+  font-size: 1rem;
+  /* border: 1px solid black; */
+}
+
+#navbar div img {
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 55%;
+  z-index: 100;
+}
+
+#navbar div:hover {
+  background-color: #f0f7f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbar div:hover h4 {
+  color: #d4af37;
+}
+
+#navbar div:hover img {
+  height: 15%;
+  width: 15%;
+  display: block;
+  position: relative;
+  left: 0%;
+}
+
+#navbar_toggle {
+  /* background-color: black; */
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 101;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  transition: all 0.5s ease-out;
+  animation: navbar 1.5s ease-out 1;
+}
+
+#navbar_toggle:hover {
+  cursor: pointer;
+}
+
+#navbar_toggle div {
+  width: 60%;
+  height: 2px;
+  background-color: white;
+  /* margin: 6px 0; */
+  border-radius: 25px;
+  position: relative;
+}
+
+/* cover_image css */
+
+
+.cover_image {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  margin-top: 0%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cover_image .monastery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  top: 5.5%;
+  margin-left: 4%;
+  /* border: 1px solid white; */
+  width: 11%;
+  height: 9%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  border-radius: 25px;
+  cursor: pointer;
+  animation: monastery 1.5s ease-out 1;
+}
+
+@keyframes monastery {
+  from {
+    top: 10%;
+    opacity: 0;
+  }
+
+  to {
+    top: 5.5%;
+    opacity: 1;
+  }
+}
+
+.cover_image .monastery::before {
+  content: " ";
+  background-color: #f0f7f7;
+  position: absolute;
+  height: 00%;
+  width: 00%;
+  overflow-x: hidden;
+  /* transform: translateX(-50%); */
+  border-radius: 25px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.cover_image .monastery:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.cover_image .monastery:hover h5 {
+  color: #d4af37;
+}
+
+.cover_image .monastery img {
+  width: 15%;
+  height: 42%;
+}
+
+.cover_image .monastery h5 {
+  color: white;
+  font-size: 1rem;
+  /* border: 1px solid red; */
+  /* margin-top: 6%; */
+}
+
+.cover_image .SignUP_Login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 5.5%;
+  right: 4%;
+  /* border: 1px solid white; */
+  width: 8%;
+  height: 9%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  border-radius: 25px;
+  animation: monastery 1.5s ease-out 1;
+}
+
+.cover_image .SignUP_Login button {
+  width: 80%;
+  height: 60%;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-right: 12%;
+}
+
+.cover_image .SignUP_Login button img {
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 55%;
+  z-index: 100;
+}
+
+.cover_image .SignUP_Login button:hover {
+  outline: none;
+  /* border: 1px solid #d4af37; */
+  padding-right: 0%;
+  color: #d4af37;
+  background-color: #f0f7f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cover_image .SignUP_Login button:hover img {
+  height: 16px;
+  width: 16px;
+  display: block;
+  position: relative;
+  left: 0%;
+}
+
+.cover_image .profile {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 5.5%;
+  right: 4%;
+  /* border: 1px solid white; */
+  width: 8%;
+  height: 9%;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.156);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.73);
+  border-radius: 25px;
+  animation: monastery 1.5s ease-out 1;
+}
+
+.cover_image .profile button {
+  width: 80%;
+  height: 60%;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-right: 12%;
+}
+
+.cover_image .profile button img {
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  left: 55%;
+  z-index: 100;
+}
+
+.cover_image .profile button:hover {
+  outline: none;
+  /* border: 1px solid #d4af37; */
+  padding-right: 0%;
+  color: #d4af37;
+  background-color: #f0f7f7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cover_image .profile button:hover img {
+  height: 16px;
+  width: 16px;
+  display: block;
+  position: relative;
+  left: 0%;
+}
+
+.cover_image .cover_image_main img {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("../images/cover_image.jpg"); */
+  background-size: cover;
+  background-position: center;
+  margin-top: 0%;
+  object-fit: cover;
+  filter: brightness(40%);
+  position: absolute;
+  z-index: -10;
+}
+
+.cover_image_heading .heading_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 80%;
+
+  /* border: 1px solid white; */
+}
+
+.cover_image_heading .heading_div h2 {
+  font-size: 3rem;
+  /* border: 1px solid white; */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.cover_image .cover_image_heading .heading_div h1 {
+  color: #fdc939;
+  animation: Sikkim_steps 3s linear 1s infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 7rem;
+  display: inline-block;
+  /* border: 1px solid wheat; */
+  width: 30%;
+}
+
+@keyframes Sikkim_steps {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 30%;
+  }
+}
+
+.cover_image .cover_image_heading .heading_div p {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* cover_image css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #dbeaf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* Header */
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  animation: slideDown 1s ease-out;
+  height: 75vh;
+  width: 100%;
+  overflow-x: hidden;
+  /* border: 1px solid red; */
+}
+
+header h1{
+  font-size: 5rem;
+  color: #d4af37
+}
+
+header p{
+  font-size: 1.5rem;
+  width: 60%;
+  /* border: 1px solid red; */
+}
+
+header img{
+  position: absolute;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  filter: brightness(40%);
+  height: 75vh;
+  width: 100vw;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* border: 1px solid red; */
+  width: 70%;
+}
+
+.controls input {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 60%;
+  /* max-width: 400px; */
+  transition: all 0.3s ease;
+}
+
+.controls input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(57, 120, 136, 0.64);
+  transform: scale(1.02);
+}
+
+.filter-buttons,
+#languageSelect {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.filter-buttons button,
+#languageSelect{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #0e5f91;
+  cursor: pointer;
+  color: #dbeaf9;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.filter-buttons button:hover,
+#languageSelect:hover{
+  background: #0d5376;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.filter-buttons button.active {
+  background: #042978;
+  color: #fff;
+}
+
+/* Grid Container */
+#monastery-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  justify-items: center;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  width: 100%;
+  max-width: 340px;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  box-shadow: 4px 8px 8px rgba(129, 212, 250, 0.5),
+    0 5px 20px 0 rgba(129, 212, 250, 0.767);
+    transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.card p {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Audio Controls */
+.audio-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.audio-controls button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #021e5fdf;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.audio-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.audio-controls .status {
+  font-size: 0.85rem;
+  color: #2c3e50;
+  margin-left: 5px;
+}
+
+/* Card Actions */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn.view {
+  background: #2d6fb3;
+  color: #fff;
+}
+
+.btn.download {
+  background: #0a4490;
+  color: #fff;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 15px;
+  }
+  .controls input {
+    width: 90%;
+  }
+  #monastery-list {
+    padding: 15px;
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    height: 180px;
+  }
+}

@@ -1,0 +1,130 @@
+[
+    {
+        "Name":"Mr. Vikas Rai",
+        "Designation":"Sr. CHA",
+        "Contact":"9474529437",
+        "District":"Pakyong",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Ragap Chettri",
+        "Designation":"Tourist Officer",
+        "Contact":"9593988564",
+        "District":"Pakyong",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    
+    {
+        "Name":"Mr Arpan Rai",
+        "Designation":"Information Assistant",
+        "Contact":"7047928011",
+        "District":"Pakyong",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Nirmal Cintury",
+        "Designation":"Deputy Director",
+        "Contact":"9002527983",
+        "District":"Gangtok",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Ms. Shital Pakhrin",
+        "Designation":"Tourist Officer",
+        "Contact":"8170902016",
+        "District":"Gangtok",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Victor Jigme Bhutia",
+        "Designation":"Information Assistant",
+        "Contact":"9635551478",
+        "District":"Gangtok",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Manoj Kumar Chettri",
+        "Designation":"Deputy Director",
+        "Contact":"7001911393",
+        "District":"Mangan",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Phur Tshering Lepcha",
+        "Designation":"Tourist Officer",
+        "Contact":"8637889626",
+        "District":"Mangan",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Phugyal Ongdup Lepcha",
+        "Designation":"Information Assistant",
+        "Contact":"9002364433/ 9002055322",
+        "District":"Mangan",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Gyamtso Tshering Bhutia",
+        "Designation":"Assistant Director",
+        "Contact":"7797887401",
+        "District":"Gyalshing",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Sonam Topden Bhutia",
+        "Designation":"Tourist Officer",
+        "Contact":"7431033006",
+        "District":"Gyalshing",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Ms. Passang Diki Bhutia",
+        "Designation":"Information Assistant",
+        "Contact":"8538025879",
+        "District":"Gyalshing",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Ms. Dipti Rai",
+        "Designation":"Assistant Director",
+        "Contact":"9933455444",
+        "District":"Namchi",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Pujan Gurung",
+        "Designation":"Tourist Officer",
+        "Contact":"6239085557/ 8509071115",
+        "District":"Namchi",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Ammiel Rai",
+        "Designation":"Information Assistant",
+        "Contact":"8617835919",
+        "District":"Namchi",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Subash Rai",
+        "Designation":"Assistant Director",
+        "Contact":"9775827123",
+        "District":"Soreng",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Mr. Asish Rai",
+        "Designation":"Tourist Officer",
+        "Contact":"8145350590",
+        "District":"Soreng",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    },
+    {
+        "Name":"Ms. Jyoti Tamang",
+        "Designation":"Information Assistant",
+        "Contact":"7029543775",
+        "District":"Soreng",
+        "image":"https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2558760599.jpg"
+    }
+
+]

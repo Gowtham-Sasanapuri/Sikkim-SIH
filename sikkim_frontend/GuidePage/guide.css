@@ -1,0 +1,377 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #f0f7f7;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- HEADER ---------- */
+#header {
+  background: linear-gradient(to right, #0f52ba, #1e90ff);
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+#header h1 {
+  font-size: 2rem;
+}
+
+#header-icons {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+#header-icons i {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* ---------- BODY LAYOUT ---------- */
+#body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  border-top: 1px solid #0f52ba;
+}
+
+/* ---------- NAVBAR ---------- */
+#navbar {
+  width: 220px;
+  background: #e1ecf7;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  flex-shrink: 0;
+}
+
+#navbar div {
+  cursor: pointer;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+#navbar div:hover {
+  background-color: #b1d4f1;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#navbar div.active {
+  background: linear-gradient(135deg, #e6f0fa, #cfe4f9, #97cbff);
+  border-left: 4px solid #0f52ba;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+#navbar div h4 {
+  font-size: 1.1rem;
+  color: #0f52ba;
+}
+
+#navbar div i {
+  color: #0f52ba;
+  font-size: 1.2rem;
+}
+
+/* ---------- CONTENT AREA ---------- */
+#body_contents {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#body_contents > div {
+  display: none;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#body_contents > div.active {
+  display: block;
+}
+
+/* ---------- TABLES (Itinerary + Past Tourists) ---------- */
+#Itinerary_contents table,
+#Itinerary_created_contents table,
+#past_tourist_contents table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+table tr th{
+  text-align: center;
+  border: 3px solid #cfe4f9;
+}
+
+th {
+  background: linear-gradient(to right, #0f52ba, #1e90ff);
+  color: #fff;
+  padding: 14px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #eef5ff;
+}
+
+td button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #3774cf;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+td button:hover {
+  background: #0f52ba;
+  transform: scale(1.05);
+}
+
+/* ---------- REQUESTS ---------- */
+#Request_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+#Request_contents > div {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px;
+  max-width: 1000px;
+  position: relative;
+  left: 50%;
+    transform: translateX(-50%);
+}
+
+#Request_contents h3 {
+  font-size: 1.2rem;
+  color: #0f52ba;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.accept_reject_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accept_reject_btns button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.accept_reject_btns .accept {
+  background: #0fba2c;
+  color: #fff;
+}
+
+.accept_reject_btns .reject {
+  background: #d9534f;
+  color: #fff;
+}
+
+.accept_reject_btns button:hover {
+  transform: scale(1.05);
+}
+
+/* logout button */
+
+#logout_btn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%; /* Keep it bottom-right */
+}
+
+#logout_btn button {
+  background: linear-gradient(135deg, #5dade2, #3498db);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+#logout_btn button:hover {
+  background: linear-gradient(135deg, #3498db, #2e86c1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#logout_btn button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ---------- PROFILE ---------- */
+#profile_contents {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#profile_contents h1 {
+  color: #0f52ba;
+  font-size: 2.5rem;
+}
+
+#details {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  /* max-width: 800px; */
+  width: 60%;
+  height: fit-content;
+  position: relative;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 45%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#guide_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#guide_img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid #2967c4;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+#profile_img {
+  margin-top: 5px;
+}
+
+#profile_img button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #3774cf;
+  color: #fff;
+  cursor: pointer;
+}
+
+#guide_details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#edit_img{
+  display: none;
+}
+
+#guide_details label {
+  background: #f2f7ff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #333;
+  align-items: center;
+}
+
+#guide_details h3 {
+  color: #0f52ba;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#edit_btn{
+  margin-top: 1.5%;
+}
+
+#edit_btn, #save_btn {
+  /* margin-top: 20px; */
+  text-align: center;
+}
+
+#edit_btn button, #save_btn button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3774cf;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s, background 0.3s;
+}
+
+#edit_btn button:hover, #save_btn button:hover {
+  background: #0f52ba;
+  transform: scale(1.05);
+}
+
+#save_btn button {
+  display: none; /* toggled by JS */
+}

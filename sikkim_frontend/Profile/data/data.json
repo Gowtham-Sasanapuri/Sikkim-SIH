@@ -1,0 +1,73 @@
+{
+    "itinerary": [
+        {
+            "tripName": "Gangtok Exploration",
+            "places": ["Gangtok", "Rumtek Monastery", "Tsomgo Lake"],
+            "dates": "2025-10-01 to 2025-10-07"
+        },
+        {
+            "tripName": "North Sikkim Adventure",
+            "places": ["Lachung", "Yumthang Valley", "Gurudongmar Lake"],
+            "dates": "2025-11-15 to 2025-11-20"
+        },
+        {
+            "tripName": "West Sikkim Trek",
+            "places": ["Pelling", "Pemayangtse Monastery", "Rabdentse Ruins"],
+            "dates": "2025-12-05 to 2025-12-10"
+        }
+    ],
+    "completed": [
+        {
+            "place": "Tsomgo Lake",
+            "from": "2025-06-10",
+            "to": "2025-06-12"
+        },
+        {
+            "place": "Rumtek Monastery",
+            "from": "2025-07-05",
+            "to": "2025-07-06"
+        },
+        {
+            "place": "MG Marg",
+            "from": "2025-08-01",
+            "to": "2025-08-02"
+        },
+        {
+            "place": "Temi Tea Gardens",
+            "from": "2025-08-15",
+            "to": "2025-08-16"
+        },
+        {
+            "place": "Saramsa Garden",
+            "from": "2025-09-01",
+            "to": "2025-09-02"
+        }
+    ],
+    "incomplete": [
+        {
+            "place": "Nathula Pass",
+            "plannedFrom": "2025-10-20",
+            "plannedTo": "2025-10-22"
+        },
+        {
+            "place": "Yumthang Valley",
+            "plannedFrom": "2025-11-01",
+            "plannedTo": "2025-11-03"
+        },
+        {
+            "place": "Gurudongmar Lake",
+            "plannedFrom": "2025-11-10",
+            "plannedTo": "2025-11-12"
+        },
+        {
+            "place": "Lachung",
+            "plannedFrom": "2025-12-01",
+            "plannedTo": "2025-12-03"
+        },
+        {
+            "place": "Pelling",
+            "plannedFrom": "2025-12-15",
+            "plannedTo": "2025-12-17"
+        }
+    ]
+}

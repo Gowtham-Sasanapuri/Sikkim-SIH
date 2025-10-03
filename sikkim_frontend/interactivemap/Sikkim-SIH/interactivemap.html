@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./interactivemap.css">
+    <title>interactive Maps</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="VrNav">
+            <h4><img src="./icons/camera.png" alt="" />Virtual Tour</h4>
+        </div>
+        <div id="MapNav">
+            <h4><img src="./icons/location.png" alt="" />Explore map</h4>
+        </div>
+        <div id="Arch">
+            <h4><img src="./icons/folder.png" alt="" />Archive</h4>
+        </div>
+        <div id="EventsNav">
+            <h4><img src="./icons/calendar.png" alt="" />Events</h4>
+        </div>
+        <div id="AudioNav">
+            <h4><img src="./icons/headphones.png" alt="" />Audio</h4>
+        </div>
+        <div id="Services">
+            <h4><img src="./icons/customer-service.png" alt="" />Services</h4>
+        </div>
+    </div>
+    <div class="cover_image">
+        <div class="cover_image_main">
+            <img src="./cover_images/4268736.jpg" alt="" />
+            <!-- <video autoplay muted loop playsinline>
+                <source src="./videos/Sikkim_tourism.mp4" type="video/mp4" />
+            </video> -->
+        </div>
+        <div class="monastery">
+            <img src="./icons/monastery.png" alt="" />
+            <h5>Monastery 360⁰</h5>
+        </div>
+        <div class="cover_image_heading">
+            <div class="heading_div">
+                <h1>INTERACTIVE MONESTRIES MAP</i></h1>
+                <h2>Explore and navigate through the beautiful monestries</h2>
+            </div>
+        </div>
+        <div class="SignUP_Login">
+            <button><img src="./icons/man.png" alt="" />Login</button>
+        </div>
+        <div class="profile">
+            <button><img src="./icons/boy.png" alt="">Profile</button>
+        </div>
+    </div>
+    <div id="controls">
+        <select id="regionfilter">
+            <option value="all">All Regions</option>
+            <option value="east">East Sikkim</option>
+            <option value="west">West Sikkim</option>
+            <option value="north">North Sikkim</option>
+            <option value="south">South Sikkim</option>
+        </select>
+    </div>
+    <div class="container" id="monastery-container">
+
+    </div>
+    </div>
+    <script src="interactivemap.js"></script>
+</body>
+
+</html>

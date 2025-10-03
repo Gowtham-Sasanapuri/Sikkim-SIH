@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Sikkim Tourism</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <nav class="sidebar" id="sidebar">
+      <ul>
+        <li id="home">
+          <i class="fa fa-arrow-left"></i>
+          <i class="fa fa-home"></i>
+          Back to Home</li>
+        <li><a href="#" data-src="profile_content.html" class="active"><i class="fa-solid fa-user-circle"></i>  Profile</a></li>
+        <li><a href="#" data-src="itinerary.html"><i class="fa-solid fa-calendar-days"></i>   Itinerary</a></li>
+        <li><a href="#" data-src="completed.html"><i class="fa-solid fa-check-circle"></i>    Completed Places</a></li>
+        <li><a href="#" data-src="incomplete.html"><i class="fa-solid fa-hourglass"></i>    Incomplete Places</a></li>
+        <li id="Logout">Logout</li>
+      </ul>
+    </nav>
+    <main class="content">
+      <iframe id="content-frame" src="profile_content.html" frameborder="0"></iframe>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
